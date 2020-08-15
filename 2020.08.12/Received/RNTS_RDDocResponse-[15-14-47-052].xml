@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns5:Envelope xmlns:ns2="urn:customs.ru:Envelope:Attachments:1.0" xmlns:ns3="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns4="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns5="http://www.w3.org/2001/06/soap-envelope" xmlns:ns6="urn:customs.ru:SimpleBody:1.0.0" xmlns:ns7="urn:customs.ru:MonitoringInfo:1.0.0" xmlns:ns8="urn:customs.ru:CommonAggregateTypes:4.2.0" xmlns:ns9="urn:customs.ru:PR:1.0.0" xmlns:ns10="urn:customs.ru:MonitoringTestDoc:1.0.0" xmlns:ns11="urn:customs.ru:MonitoringInquiry:1.0.0">
+    <ns5:Header>
+        <ns3:RoutingInf>
+            <ns3:EnvelopeID>E297EA31-0A15-2A8F-7B8F-46D3A5EAB69C</ns3:EnvelopeID>
+            <ns3:InitialEnvelopeID>70903d07-6ffa-4f34-93bd-e73db46d6767</ns3:InitialEnvelopeID>
+            <ns3:SenderInformation>WMQ://RU.FTS/RNTS.INCOME</ns3:SenderInformation>
+            <ns3:ReceiverInformation>WMQ://RU.FTS.SZTU.MRM.SLL/RNTS.CLIENTQ.03</ns3:ReceiverInformation>
+            <ns3:PreparationDateTime>2020-08-12T15:14:33.521+03:00</ns3:PreparationDateTime>
+            <ns3:Priority>4</ns3:Priority>
+        </ns3:RoutingInf>
+        <ns4:ApplicationInf>
+            <ns4:SoftKind>ASKTT2-НЮГК</ns4:SoftKind>
+            <ns4:SoftVersion>1.0.0.0</ns4:SoftVersion>
+            <ns4:MessageKind>RNTS.101.056</ns4:MessageKind>
+        </ns4:ApplicationInf>
+        <ns160:SenderInf xmlns:ns160="urn:customs.ru:Envelope:SenderInf:1.0" xmlns:ns159="http://www.w3.org/2000/09/xmldsig#" xmlns:ns161="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns162="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns163="http://www.w3.org/2001/06/soap-envelope">
+            <ns160:type>SERVER</ns160:type>
+            <ns160:id>10000000</ns160:id>
+        </ns160:SenderInf>
+    </ns5:Header>
+    <ns5:Body>
+        <Signature:Signature xmlns:Signature="http://www.w3.org/2000/09/xmldsig#" xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns159="http://www.w3.org/2000/09/xmldsig#" xmlns:ns160="urn:customs.ru:Envelope:SenderInf:1.0" xmlns:ns161="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns162="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns163="http://www.w3.org/2001/06/soap-envelope">
+            <ns159:SignedInfo>
+                <ns159:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                <ns159:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                <ns159:Reference URI="#KeyInfo">
+                    <ns159:Transforms>
+                        <ns159:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    </ns159:Transforms>
+                    <ns159:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                    <ns159:DigestValue>flMEI/7TXtzyqemTlc6xcaKwhhqRcIaKKO2L2Gd7aac=</ns159:DigestValue>
+                </ns159:Reference>
+                <ns159:Reference URI="#Object">
+                    <ns159:Transforms>
+                        <ns159:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    </ns159:Transforms>
+                    <ns159:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                    <ns159:DigestValue>kShnqEOgMnTPwy9sG9kVXnkoW8IqjefGReM2Ldfhvp8=</ns159:DigestValue>
+                </ns159:Reference>
+            </ns159:SignedInfo>
+            <ns159:SignatureValue>MIIFKAYJKoZIhvcNAQcCoIIFGTCCBRUCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHATGCBPEwggTtAgEBMIIB4DCCAckxIDAeBgkqhkiG9w0BCQEWEXZ1Y0BjYS5jdXN0b21zLnJ1MRgwFgYFKoUDZAESDTExMTc3NDY4ODk5NDExGjAYBggqhQMDgQMBARIMMDA3NzMwNjU0NDcxMQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRkwFwYDVQQHDBDQsy4g0JzQvtGB0LrQstCwMTMwMQYDVQQJDCrRg9C7LiDQndC+0LLQvtC30LDQstC+0LTRgdC60LDRjywg0LQuIDExLzUxezB5BgNVBAoMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtTF7MHkGA1UEAwxy0KbQtdC90YLRgNCw0LvRjNC90L7QtSDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Qvi3RgtC10YXQvdC40YfQtdGB0LrQvtC1INGC0LDQvNC+0LbQtdC90L3QvtC1INGD0L/RgNCw0LLQu9C10L3QuNC1AhEA4bLZesQM3YDpEVa3MAWThDAMBggqhQMHAQECAgUAoIICpDAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMDA4MTIxMjE0MzNaMC8GCSqGSIb3DQEJBDEiBCD89b+l9g0YaMlDBNx2z9WuSzTSc3Y33o/W6jnjuOYR4TCCAjcGCyqGSIb3DQEJEAIvMYICJjCCAiIwggIeMIICGjAKBggqhQMHAQECAgQgnj99RI3JUg1H6jEfmsxGtmmaEPTtIz/RdKaCAu+8KZkwggHoMIIB0aSCAc0wggHJMSAwHgYJKoZIhvcNAQkBFhF2dWNAY2EuY3VzdG9tcy5ydTEYMBYGBSqFA2QBEg0xMTE3NzQ2ODg5OTQxMRowGAYIKoUDA4EDAQESDDAwNzczMDY1NDQ3MTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDEzMDEGA1UECQwq0YPQuy4g0J3QvtCy0L7Qt9Cw0LLQvtC00YHQutCw0Y8sINC0LiAxMS81MXsweQYDVQQKDHLQptC10L3RgtGA0LDQu9GM0L3QvtC1INC40L3RhNC+0YDQvNCw0YbQuNC+0L3QvdC+LdGC0LXRhdC90LjRh9C10YHQutC+0LUg0YLQsNC80L7QttC10L3QvdC+0LUg0YPQv9GA0LDQstC70LXQvdC40LUxezB5BgNVBAMMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtQIRAOGy2XrEDN2A6RFWtzAFk4QwDAYIKoUDBwEBAQEFAARAIUOTLFg0h7AXBoHFIfe1nbAjFmU/E0SODl5fYU0fB9wvapauC5ixgs5YV1IrXm7hdc00e1oWEtHtK6qP1+nMKQ==</ns159:SignatureValue>
+            <ns159:KeyInfo Id="KeyInfo">
+                <ns159:X509Data>
+                    <ns159:X509Certificate>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KNCy0LXRgNGB0LjRjyA0LjApMIIE9AYDVR0fBIIE6zCCBOcwLaAroCmGJ2h0dHA6Ly92dWMuY3VzdG9tcy5ydS9jZHAvY2Ffc3Z1Y3RvLmNybDBMoEqgSIZGaHR0cDovL3N2dWN0b3MuZ25pdmMuZWFpcy5jdXN0b21zLnJ1L2ltYWdlcy9zdG9yaWVzL2ZpbGUvY2Ffc3Z1Y3RvLmNybDBZoFegVYZTaHR0cDovL3JhMi1jaXR0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwXKBaoFiGVmh0dHA6Ly9yYS1za3R1LnNrdHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMFugWaBXhlVodHRwOi8vcmExLXB0dS5wdHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF+gXaBbhllodHRwOi8vcmExLWR2dHUuZHZ0dXJhLnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS1zdHUyLnN0dTIuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMFugWaBXhlVodHRwOi8vcmExLXV0dS51dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF2gW6BZhldodHRwOi8vcmExLXN6dHUuc3p0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwWqBYoFaGVGh0dHA6Ly9yYS1jdHUuY3R1LnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF2gW6BZhldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwXaBboFmGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMIIE7AYIKwYBBQUHAQEEggTeMIIE2jA1BggrBgEFBQcwAoYpaHR0cDovL3Z1Yy5jdXN0b21zLnJ1L2NkcC91Y19jaXR0dV8xMi5jZXIwVAYIKwYBBQUHMAKGSGh0dHA6Ly9zdnVjdG9zLmduaXZjLmVhaXMuY3VzdG9tcy5ydS9pbWFnZXMvc3Rvcmllcy9maWxlL3VjX2NpdHR1XzEyLmNlcjBfBggrBgEFBQcwAoZTaHR0cDovL3JhMi1jaXR0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYgYIKwYBBQUHMAKGVmh0dHA6Ly9yYS1za3R1LnNrdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGEGCCsGAQUFBzAChlVodHRwOi8vcmExLXB0dS5wdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGUGCCsGAQUFBzAChllodHRwOi8vcmExLWR2dHUuZHZ0dXJhLnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS1zdHUyLnN0dTIuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGEGCCsGAQUFBzAChlVodHRwOi8vcmExLXV0dS51dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXN6dHUuc3p0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYAYIKwYBBQUHMAKGVGh0dHA6Ly9yYS1jdHUuY3R1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYwYIKwYBBQUHMAKGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDAKBggqhQMHAQEDAgNBAPs3Pr6QrfSbaOJjQDymkfy7FL3SoOa03QOF2rvBxnWrwgMz/Bxn7CWp0dtV1QScX75f7mbIRpo530hB3Iwx4bY=</ns159:X509Certificate>
+                </ns159:X509Data>
+            </ns159:KeyInfo>
+            <ns159:Object Id="Object">
+                <edrs:EPS_DocResponse xmlns:edrs="urn:customs.ru:Information:ExchangeDocuments:EPS_DocResponse:5.11.0" xmlns:cat_ru="urn:customs.ru:CommonAggregateTypes:5.10.0" xmlns:fts="http://www.w3.org/2000/09/xmldsig#" DocumentModeID="1004081E">
+                    <cat_ru:DocumentID>8908a6d5-386e-4f4c-882a-444761ce03af</cat_ru:DocumentID>
+                    <cat_ru:RefDocumentID>5c80a9c3-8a80-460a-ae45-f154df914238</cat_ru:RefDocumentID>
+                    <edrs:RequestPositionID>89f10b82-7101-4209-857b-f7da3be39ad0</edrs:RequestPositionID>
+                    <edrs:ArchDocumentInfoAdd>
+                        <edrs:ArchID>a85f1121-f261-4f04-af8b-b4f1516a739e</edrs:ArchID>
+                        <edrs:ArchDeclID>102773904837112</edrs:ArchDeclID>
+                        <edrs:ArchDocID>44c87137-0263-4ed1-a3b9-98e6aaea779a</edrs:ArchDocID>
+                    </edrs:ArchDocumentInfoAdd>
+                    <edrs:DocResponseAdd>
+                        <edrs:DocResponseBody>
+                            <fts:Signature>
+<fts:SignedInfo>
+    <fts:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+    <fts:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+    <fts:Reference URI="#KeyInfo">
+        <fts:Transforms>
+            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+        <fts:DigestValue>gSrN0z5sI7o5CNgrM/XIo6Zaa9Z0awE1IF033rMXpG8=</fts:DigestValue>
+    </fts:Reference>
+    <fts:Reference URI="#Object">
+        <fts:Transforms>
+            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+        <fts:DigestValue>E9cAkSRCbpufEeyZgjbI0iCAeUe6pz5MEx5RgzNXEzI=</fts:DigestValue>
+    </fts:Reference>
+</fts:SignedInfo>
+<fts:SignatureValue>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</fts:SignatureValue>
+<fts:KeyInfo Id="KeyInfo">
+    <fts:X509Data>
+        <fts:X509Certificate>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</fts:X509Certificate>
+    </fts:X509Data>
+</fts:KeyInfo>
+<fts:Object Id="Object">
+    <inv:Invoice xmlns:inv="urn:customs.ru:Information:CommercialFinanceDocuments:Invoice:5.11.0" xmlns:catComFin_ru="urn:customs.ru:Information:CommercialFinanceDocuments:CommercialFinanceCommonAgregateTypesCust:5.10.0" DocumentModeID="1002007E">
+        <cat_ru:DocumentID>845682A3-E907-4510-0E43-43D969719F3F</cat_ru:DocumentID>
+        <inv:CurrencyRate>86.8258</inv:CurrencyRate>
+        <inv:CurrencyCode>EUR</inv:CurrencyCode>
+        <inv:PlacesQuantity>1</inv:PlacesQuantity>
+        <inv:GrossWeightQuantity>10850</inv:GrossWeightQuantity>
+        <inv:GCost>64944.00</inv:GCost>
+        <inv:TotalCost>64944.00</inv:TotalCost>
+        <inv:Buyer>
+            <catComFin_ru:CompanyID>5190140130</catComFin_ru:CompanyID>
+            <catComFin_ru:KPPCode>510501001</catComFin_ru:KPPCode>
+            <catComFin_ru:Name>Olen Betong LLC</catComFin_ru:Name>
+            <inv:PostalAddress>
+                <cat_ru:PostalCode>184381</cat_ru:PostalCode>
+                <cat_ru:CountryCode>RU</cat_ru:CountryCode>
+                <cat_ru:CounryName>РОССИЯ</cat_ru:CounryName>
+                <cat_ru:City>Kola</cat_ru:City>
+                <cat_ru:StreetHouse>Avtomobilistov st., site Nr.6</cat_ru:StreetHouse>
+            </inv:PostalAddress>
+        </inv:Buyer>
+        <inv:Seler>
+            <catComFin_ru:Name>Tecwill OY</catComFin_ru:Name>
+            <inv:PostalAddress>
+                <cat_ru:PostalCode>80100</cat_ru:PostalCode>
+                <cat_ru:CountryCode>FI</cat_ru:CountryCode>
+                <cat_ru:CounryName>ФИНЛЯНДИЯ</cat_ru:CounryName>
+                <cat_ru:City>Joensuu</cat_ru:City>
+                <cat_ru:StreetHouse>Rahtikatu 3 B</cat_ru:StreetHouse>
+            </inv:PostalAddress>
+        </inv:Seler>
+        <inv:Consignor>
+            <cat_ru:OrganizationName>Tecwill OY</cat_ru:OrganizationName>
+            <cat_ru:Address>
+                <cat_ru:PostalCode>80100</cat_ru:PostalCode>
+                <cat_ru:CountryCode>FI</cat_ru:CountryCode>
+                <cat_ru:CounryName>ФИНЛЯНДИЯ</cat_ru:CounryName>
+                <cat_ru:City>Joensuu</cat_ru:City>
+                <cat_ru:StreetHouse>Rahtikatu 3 B</cat_ru:StreetHouse>
+            </cat_ru:Address>
+        </inv:Consignor>
+        <inv:Consignee>
+            <cat_ru:OrganizationName>Olen Betong LLC</cat_ru:OrganizationName>
+            <cat_ru:RFOrganizationFeatures>
+                <cat_ru:OGRN>1055194037172</cat_ru:OGRN>
+                <cat_ru:INN>5190140130</cat_ru:INN>
+                <cat_ru:KPP>510501001</cat_ru:KPP>
+            </cat_ru:RFOrganizationFeatures>
+            <cat_ru:Address>
+                <cat_ru:PostalCode>184381</cat_ru:PostalCode>
+                <cat_ru:CountryCode>RU</cat_ru:CountryCode>
+                <cat_ru:CounryName>РОССИЯ</cat_ru:CounryName>
+                <cat_ru:City>Kola</cat_ru:City>
+                <cat_ru:StreetHouse>Avtomobilistov st., site Nr.6</cat_ru:StreetHouse>
+            </cat_ru:Address>
+        </inv:Consignee>
+        <inv:InvoiceGoods>
+            <catComFin_ru:GoodsCode>8474310009</catComFin_ru:GoodsCode>
+            <catComFin_ru:GoodsDescription>Компоненты бетонной станции TECWILL TOWER / Бункеры инертных материалов, часть 2, поз. 1.11.2</catComFin_ru:GoodsDescription>
+            <catComFin_ru:GoodsQuantity>1.000000</catComFin_ru:GoodsQuantity>
+            <catComFin_ru:MeasureUnitQualifierName>ШТ</catComFin_ru:MeasureUnitQualifierName>
+            <catComFin_ru:GrossWeightQuantity>10850.000000</catComFin_ru:GrossWeightQuantity>
+            <catComFin_ru:Price>64944</catComFin_ru:Price>
+            <catComFin_ru:TotalCost>64944.00</catComFin_ru:TotalCost>
+            <catComFin_ru:OriginCountryCode>000</catComFin_ru:OriginCountryCode>
+        </inv:InvoiceGoods>
+        <inv:DeliveryTerms>
+            <catComFin_ru:DeliveryPlace>Murmansk, Russia (Россия)</catComFin_ru:DeliveryPlace>
+            <catComFin_ru:DeliveryTermsStringCode>DAP</catComFin_ru:DeliveryTermsStringCode>
+            <inv:DispatchCountryCode>FI</inv:DispatchCountryCode>
+            <inv:TradingCountryCode>FI</inv:TradingCountryCode>
+            <inv:DestinationCountryCode>RU</inv:DestinationCountryCode>
+        </inv:DeliveryTerms>
+        <inv:TransportMeans>
+            <catComFin_ru:Number>A278PA198</catComFin_ru:Number>
+            <catComFin_ru:ModeCode>31</catComFin_ru:ModeCode>
+            <catComFin_ru:NationalityCode>643</catComFin_ru:NationalityCode>
+            <catComFin_ru:MoverIndicator>1</catComFin_ru:MoverIndicator>
+        </inv:TransportMeans>
+        <inv:TransportMeans>
+            <catComFin_ru:Number>BH674677</catComFin_ru:Number>
+            <catComFin_ru:ModeCode>01</catComFin_ru:ModeCode>
+            <catComFin_ru:NationalityCode>643</catComFin_ru:NationalityCode>
+            <catComFin_ru:MoverIndicator>0</catComFin_ru:MoverIndicator>
+        </inv:TransportMeans>
+        <inv:Registration>
+            <cat_ru:PrDocumentName>Инвойс</cat_ru:PrDocumentName>
+            <cat_ru:PrDocumentNumber>P281-09</cat_ru:PrDocumentNumber>
+            <cat_ru:PrDocumentDate>2020-08-10</cat_ru:PrDocumentDate>
+        </inv:Registration>
+    </inv:Invoice>
+</fts:Object>
+                            </fts:Signature>
+                        </edrs:DocResponseBody>
+                    </edrs:DocResponseAdd>
+                    <edrs:ArchiveInformation>
+                        <edrs:ArchDocAlbum>5.15.0</edrs:ArchDocAlbum>
+                        <edrs:ArchDocDate>2020-08-11</edrs:ArchDocDate>
+                    </edrs:ArchiveInformation>
+                </edrs:EPS_DocResponse>
+            </ns159:Object>
+        </Signature:Signature>
+    </ns5:Body>
+</ns5:Envelope>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns5:Envelope xmlns:ns2="urn:customs.ru:Envelope:Attachments:1.0" xmlns:ns3="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns4="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns5="http://www.w3.org/2001/06/soap-envelope" xmlns:ns6="urn:customs.ru:SimpleBody:1.0.0" xmlns:ns7="urn:customs.ru:MonitoringInfo:1.0.0" xmlns:ns8="urn:customs.ru:CommonAggregateTypes:4.2.0" xmlns:ns9="urn:customs.ru:PR:1.0.0" xmlns:ns10="urn:customs.ru:MonitoringTestDoc:1.0.0" xmlns:ns11="urn:customs.ru:MonitoringInquiry:1.0.0">
+    <ns5:Header>
+        <ns3:RoutingInf>
+            <ns3:EnvelopeID>E41E7213-0A15-2A8C-71AF-ED595B412BEF</ns3:EnvelopeID>
+            <ns3:InitialEnvelopeID>9a2fa484-6f60-4619-8cbd-727e696d9b3e</ns3:InitialEnvelopeID>
+            <ns3:SenderInformation>WMQ://RU.FTS/RNTS.INCOME</ns3:SenderInformation>
+            <ns3:ReceiverInformation>WMQ://RU.FTS.SZTU.MRM.SLL/RNTS.CLIENTQ.03</ns3:ReceiverInformation>
+            <ns3:PreparationDateTime>2020-08-12T22:21:07.347+03:00</ns3:PreparationDateTime>
+            <ns3:Priority>4</ns3:Priority>
+        </ns3:RoutingInf>
+        <ns4:ApplicationInf>
+            <ns4:SoftKind>ASKTT2-НЮГК</ns4:SoftKind>
+            <ns4:SoftVersion>1.0.0.0</ns4:SoftVersion>
+            <ns4:MessageKind>RNTS.101.056</ns4:MessageKind>
+        </ns4:ApplicationInf>
+        <ns160:SenderInf xmlns:ns160="urn:customs.ru:Envelope:SenderInf:1.0" xmlns:ns159="http://www.w3.org/2000/09/xmldsig#" xmlns:ns161="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns162="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns163="http://www.w3.org/2001/06/soap-envelope">
+            <ns160:type>SERVER</ns160:type>
+            <ns160:id>10000000</ns160:id>
+        </ns160:SenderInf>
+    </ns5:Header>
+    <ns5:Body>
+        <Signature:Signature xmlns:Signature="http://www.w3.org/2000/09/xmldsig#" xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns159="http://www.w3.org/2000/09/xmldsig#" xmlns:ns160="urn:customs.ru:Envelope:SenderInf:1.0" xmlns:ns161="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns162="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns163="http://www.w3.org/2001/06/soap-envelope">
+            <ns159:SignedInfo>
+                <ns159:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                <ns159:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                <ns159:Reference URI="#KeyInfo">
+                    <ns159:Transforms>
+                        <ns159:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    </ns159:Transforms>
+                    <ns159:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                    <ns159:DigestValue>flMEI/7TXtzyqemTlc6xcaKwhhqRcIaKKO2L2Gd7aac=</ns159:DigestValue>
+                </ns159:Reference>
+                <ns159:Reference URI="#Object">
+                    <ns159:Transforms>
+                        <ns159:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    </ns159:Transforms>
+                    <ns159:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                    <ns159:DigestValue>1Y1dpCxUdtHiNrCmDYInGfaI7GsfQbFy4U6g9aTJqfQ=</ns159:DigestValue>
+                </ns159:Reference>
+            </ns159:SignedInfo>
+            <ns159:SignatureValue>MIIFKAYJKoZIhvcNAQcCoIIFGTCCBRUCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHATGCBPEwggTtAgEBMIIB4DCCAckxIDAeBgkqhkiG9w0BCQEWEXZ1Y0BjYS5jdXN0b21zLnJ1MRgwFgYFKoUDZAESDTExMTc3NDY4ODk5NDExGjAYBggqhQMDgQMBARIMMDA3NzMwNjU0NDcxMQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRkwFwYDVQQHDBDQsy4g0JzQvtGB0LrQstCwMTMwMQYDVQQJDCrRg9C7LiDQndC+0LLQvtC30LDQstC+0LTRgdC60LDRjywg0LQuIDExLzUxezB5BgNVBAoMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtTF7MHkGA1UEAwxy0KbQtdC90YLRgNCw0LvRjNC90L7QtSDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Qvi3RgtC10YXQvdC40YfQtdGB0LrQvtC1INGC0LDQvNC+0LbQtdC90L3QvtC1INGD0L/RgNCw0LLQu9C10L3QuNC1AhEA4bLZesQM3YDpEVa3MAWThDAMBggqhQMHAQECAgUAoIICpDAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMDA4MTIxOTIxMDZaMC8GCSqGSIb3DQEJBDEiBCAaG6Q59JOaYG7wWVvri4SiJCjGO2FU8WXF6Iifgmr6HTCCAjcGCyqGSIb3DQEJEAIvMYICJjCCAiIwggIeMIICGjAKBggqhQMHAQECAgQgnj99RI3JUg1H6jEfmsxGtmmaEPTtIz/RdKaCAu+8KZkwggHoMIIB0aSCAc0wggHJMSAwHgYJKoZIhvcNAQkBFhF2dWNAY2EuY3VzdG9tcy5ydTEYMBYGBSqFA2QBEg0xMTE3NzQ2ODg5OTQxMRowGAYIKoUDA4EDAQESDDAwNzczMDY1NDQ3MTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDEzMDEGA1UECQwq0YPQuy4g0J3QvtCy0L7Qt9Cw0LLQvtC00YHQutCw0Y8sINC0LiAxMS81MXsweQYDVQQKDHLQptC10L3RgtGA0LDQu9GM0L3QvtC1INC40L3RhNC+0YDQvNCw0YbQuNC+0L3QvdC+LdGC0LXRhdC90LjRh9C10YHQutC+0LUg0YLQsNC80L7QttC10L3QvdC+0LUg0YPQv9GA0LDQstC70LXQvdC40LUxezB5BgNVBAMMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtQIRAOGy2XrEDN2A6RFWtzAFk4QwDAYIKoUDBwEBAQEFAARAPTSpiShTRow8Qyf71PFOycpaW8vKR2LgelZopqM2crbcU5kFDL1w7iMmBZDyj1bxdaPbNHFa510y7IsMlqm6SA==</ns159:SignatureValue>
+            <ns159:KeyInfo Id="KeyInfo">
+                <ns159:X509Data>
+                    <ns159:X509Certificate>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KNCy0LXRgNGB0LjRjyA0LjApMIIE9AYDVR0fBIIE6zCCBOcwLaAroCmGJ2h0dHA6Ly92dWMuY3VzdG9tcy5ydS9jZHAvY2Ffc3Z1Y3RvLmNybDBMoEqgSIZGaHR0cDovL3N2dWN0b3MuZ25pdmMuZWFpcy5jdXN0b21zLnJ1L2ltYWdlcy9zdG9yaWVzL2ZpbGUvY2Ffc3Z1Y3RvLmNybDBZoFegVYZTaHR0cDovL3JhMi1jaXR0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwXKBaoFiGVmh0dHA6Ly9yYS1za3R1LnNrdHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMFugWaBXhlVodHRwOi8vcmExLXB0dS5wdHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF+gXaBbhllodHRwOi8vcmExLWR2dHUuZHZ0dXJhLnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS1zdHUyLnN0dTIuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMFugWaBXhlVodHRwOi8vcmExLXV0dS51dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF2gW6BZhldodHRwOi8vcmExLXN6dHUuc3p0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwWqBYoFaGVGh0dHA6Ly9yYS1jdHUuY3R1LnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF2gW6BZhldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwXaBboFmGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMIIE7AYIKwYBBQUHAQEEggTeMIIE2jA1BggrBgEFBQcwAoYpaHR0cDovL3Z1Yy5jdXN0b21zLnJ1L2NkcC91Y19jaXR0dV8xMi5jZXIwVAYIKwYBBQUHMAKGSGh0dHA6Ly9zdnVjdG9zLmduaXZjLmVhaXMuY3VzdG9tcy5ydS9pbWFnZXMvc3Rvcmllcy9maWxlL3VjX2NpdHR1XzEyLmNlcjBfBggrBgEFBQcwAoZTaHR0cDovL3JhMi1jaXR0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYgYIKwYBBQUHMAKGVmh0dHA6Ly9yYS1za3R1LnNrdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGEGCCsGAQUFBzAChlVodHRwOi8vcmExLXB0dS5wdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGUGCCsGAQUFBzAChllodHRwOi8vcmExLWR2dHUuZHZ0dXJhLnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS1zdHUyLnN0dTIuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGEGCCsGAQUFBzAChlVodHRwOi8vcmExLXV0dS51dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXN6dHUuc3p0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYAYIKwYBBQUHMAKGVGh0dHA6Ly9yYS1jdHUuY3R1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYwYIKwYBBQUHMAKGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDAKBggqhQMHAQEDAgNBAPs3Pr6QrfSbaOJjQDymkfy7FL3SoOa03QOF2rvBxnWrwgMz/Bxn7CWp0dtV1QScX75f7mbIRpo530hB3Iwx4bY=</ns159:X509Certificate>
+                </ns159:X509Data>
+            </ns159:KeyInfo>
+            <ns159:Object Id="Object">
+                <edrs:EPS_DocResponse xmlns:edrs="urn:customs.ru:Information:ExchangeDocuments:EPS_DocResponse:5.11.0" xmlns:cat_ru="urn:customs.ru:CommonAggregateTypes:5.10.0" xmlns:fts="http://www.w3.org/2000/09/xmldsig#" DocumentModeID="1004081E">
+                    <cat_ru:DocumentID>482e6a8c-3d28-4651-a533-fc2f98a4e5a0</cat_ru:DocumentID>
+                    <cat_ru:RefDocumentID>f257df9a-2f41-44b1-ab21-a149ba34899e</cat_ru:RefDocumentID>
+                    <edrs:RequestPositionID>4ff047e1-ce9f-4496-b288-753e056d76df</edrs:RequestPositionID>
+                    <edrs:ArchDocumentInfoAdd>
+                        <edrs:ArchID>049d9e26-5620-4a37-a86e-d9d8730bc2c3</edrs:ArchID>
+                        <edrs:ArchDeclID>102773904838032</edrs:ArchDeclID>
+                        <edrs:ArchDocID>142c7277-685e-4d5b-81aa-41a7c5280ffb</edrs:ArchDocID>
+                    </edrs:ArchDocumentInfoAdd>
+                    <edrs:DocResponseAdd>
+                        <edrs:DocResponseBody>
+                            <fts:Signature>
+<fts:SignedInfo>
+    <fts:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+    <fts:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+    <fts:Reference URI="#KeyInfo">
+        <fts:Transforms>
+            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+        <fts:DigestValue>gg9eDy/FhFh3l25ihOLNzd2vDzEEhV+cjtf2rOWuoA0=</fts:DigestValue>
+    </fts:Reference>
+    <fts:Reference URI="#Object">
+        <fts:Transforms>
+            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+        <fts:DigestValue>o/bTJakp4hGeqWBN1oJEjKP90zm8PHyNCiiI4/3LXd8=</fts:DigestValue>
+    </fts:Reference>
+</fts:SignedInfo>
+<fts:SignatureValue>MIIEjAYJKoZIhvcNAQcCoIIEfTCCBHkCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHATGCBFUwggRRAgEBMIIBkjCCAXwxITAfBgkqhkiG9w0BCQEWEnVjQGJlbGluZm9uYWxvZy5ydTEYMBYGBSqFA2QBEg0xMDMzMTA4MDAwNTQwMRowGAYIKoUDA4EDAQESDDAwMzEyMzEwMTE4ODELMAkGA1UEBhMCUlUxMzAxBgNVBAgMKjMxINCR0LXQu9Cz0L7RgNC+0LTRgdC60LDRjyDQvtCx0LvQsNGB0YLRjDEZMBcGA1UEBwwQ0JHQtdC70LPQvtGA0L7QtDE2MDQGA1UECQwt0L/RgC3RgiDQkS7QpdC80LXQu9GM0L3QuNGG0LrQvtCz0L4sINC0LjEzM9CcMTAwLgYDVQQLDCfQo9C00L7RgdGC0L7QstC10YDRj9GO0YnQuNC5INGG0LXQvdGC0YAxLDAqBgNVBAoMI9CQ0J3QniDCq9CR0JXQm9CY0J3QpNCe0J3QkNCb0J7Qk8K7MSwwKgYDVQQDDCPQkNCd0J4gwqvQkdCV0JvQmNCd0KTQntCd0JDQm9Ce0JPCuwIQS4PcAHaqSYZPhbwiCU4gJDAMBggqhQMHAQECAgUAoIICVjAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMDA1MTUxMjEyNTNaMC8GCSqGSIb3DQEJBDEiBCCLkvZk7CTJVwrWVUcZ79LY9ltgegyoGf/p+eT85e8EyDCCAekGCyqGSIb3DQEJEAIvMYIB2DCCAdQwggHQMIIBzDAKBggqhQMHAQECAgQgbybCF7wRhgW8QARWjThrxh+A2OHaVefAZ6o90/K6PjIwggGaMIIBhKSCAYAwggF8MSEwHwYJKoZIhvcNAQkBFhJ1Y0BiZWxpbmZvbmFsb2cucnUxGDAWBgUqhQNkARINMTAzMzEwODAwMDU0MDEaMBgGCCqFAwOBAwEBEgwwMDMxMjMxMDExODgxCzAJBgNVBAYTAlJVMTMwMQYDVQQIDCozMSDQkdC10LvQs9C+0YDQvtC00YHQutCw0Y8g0L7QsdC70LDRgdGC0YwxGTAXBgNVBAcMENCR0LXQu9Cz0L7RgNC+0LQxNjA0BgNVBAkMLdC/0YAt0YIg0JEu0KXQvNC10LvRjNC90LjRhtC60L7Qs9C+LCDQtC4xMzPQnDEwMC4GA1UECwwn0KPQtNC+0YHRgtC+0LLQtdGA0Y/RjtGJ0LjQuSDRhtC10L3RgtGAMSwwKgYDVQQKDCPQkNCd0J4gwqvQkdCV0JvQmNCd0KTQntCd0JDQm9Ce0JPCuzEsMCoGA1UEAwwj0JDQndCeIMKr0JHQldCb0JjQndCk0J7QndCQ0JvQntCTwrsCEEuD3AB2qkmGT4W8IglOICQwDAYIKoUDBwEBAQEFAARAdygCrXeSRXb+EIXZwHUsGm+XDRjgJmJUOHY1C2nKHUV/sOHXwF/4JPofqwkUpPYf6dHdn+8DRtN50POTh0jY/Q==</fts:SignatureValue>
+<fts:KeyInfo Id="KeyInfo">
+    <fts:X509Data>
+        <fts:X509Certificate>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</fts:X509Certificate>
+    </fts:X509Data>
+</fts:KeyInfo>
+<fts:Object Id="Object">
+    <crc:CustomsRepresContract xmlns:crc="urn:customs.ru:Information:CustomsDocuments:CustomsRepresContract:5.15.0" xmlns:RUScat_ru="urn:customs.ru:RUSCommonAggregateTypes:5.15.0" DocumentModeID="1006196E">
+        <cat_ru:DocumentID>C0646868-8EA5-4381-94D2-68272C5ED0D5</cat_ru:DocumentID>
+        <crc:PaymentFactSign>0</crc:PaymentFactSign>
+        <crc:AdditionalInformation>ДОГОВОР № 0807/00-17-087Т   
+НА ОКАЗАНИЕ УСЛУГ ПО ТАМОЖЕННОМУ ОФОРМЛЕНИЮ
+
+г. Санкт-Петербург		«18»    июня   2018 г.
+
+
+Общество с ограниченной ответственностью «ПИТЕРТРАНС» (далее ООО «ПИТЕРТРАНС») в лице  генерального директора Баскина Григория Михайловича, действующего на основании Устава и Свидетельства о включении в Реестр таможенных представителей № 0895/00 от 18 июня 2018 года, в дальнейшем именуемое «Таможенный Представитель», с одной стороны, и Индивидуальный предприниматель Шелемба Василий Иванович в лице  руководителя Шелемба Василия Ивановича, действующего на основании Свидетельства, в дальнейшем именуемое «Участник ВЭД», с другой стороны, совместно именуемые «Стороны», заключили настоящий договор (далее – Договор) о нижеследующем:
+
+1.	ПРЕДМЕТ ДОГОВОРА
+
+1.1.	  По настоящему Договору «Участник ВЭД» поручает «Таможенному Представителю», а  «Таможенный Представитель» принимает на себя обязательства по совершению от имени и за счет «Участника ВЭД», за вознаграждение, таможенных операций, связанных с таможенным оформлением (в том числе декларированием) товаров и транспортных средств «Участника ВЭД», перемещаемых через таможенную границу ЕАЭС (далее – товары, грузы), а также оказывает прочие услуги по поручению «Участника ВЭД», от имени и за счет «Участника ВЭД», либо от своего имени и за счет «Участника ВЭД».
+1.2.	Договором регулируются отношения Сторон, возникающие при совершении таможенных операций с товарами и транспортными средствами, в отношении которых «Участник ВЭД» обладает надлежащими полномочиями.
+1.3.	При  осуществлении обязательств по настоящему Договору «Таможенный Представитель» и «Участник ВЭД» руководствуются гражданским законодательством РФ, положениями Таможенного Кодекса ЕАЭС, правовыми актами таможенного законодательства ЕАЭС и РФ и нижеследующими условиями.
+
+2.	ПРАВА И ОБЯЗАННОСТИ СТОРОН
+
+2.1.	«Участник ВЭД» обязан:
+2.1.1. Не менее чем за 3 (Трое) суток до прибытия товара на таможенную территорию РФ, либо не менее чем 3 (Трое) суток до заявления режима, предполагающего вывоз товара с таможенной территории РФ, предоставить «Таможенному Представителю» в полном объеме достоверные документы и сведения, необходимые для оказания услуг по Договору, по перечню, установленному правовыми актами РФ.
+2.1.2. Своевременно в письменной форме доводить до «Таможенного Представителя» информацию об изменениях во внешнеторговых договорах (соглашениях), паспортах сделок и других документах «Участника ВЭД», влияющих на соблюдение требований законодательства РФ.
+2.1.3. По запросу «Таможенного Представителя» незамедлительно предоставлять любые дополнительные сведения и документы, необходимые для выполнения обязанностей по настоящему  Договору.
+2.1.4. Предоставить «Таможенному Представителю» платёжные поручения, свидетельствующие о перечислении денежных средств на счета таможенного органа в Федеральном Казначействе, либо своевременно (в сроки, установленные п. 2.1.1. настоящего Договора) и в полном объеме перечислить денежные средства на счёт «Таможенного Представителя» для оплаты таможенных платежей за счет «Участника ВЭД» в соответствии с таможенным законодательством.
+2.1.5. Дополнительно согласовать с «Таможенным Представителем» и направить ему соответствующее указание на проведение предварительного (до подачи таможенной декларации) осмотра/досмотра/взвешивания прибывшего на таможенную территорию РФ товара. Обеспечивать возможность предъявления таможенному органу по требованию последнего декларируемый товар. Без получения соответствующего указания «Участника ВЭД» «Таможенный Представитель» не вправе проводить соответствующие предварительные операции с товарами, за исключением случаев выявления в представленных документах и сведениях несоответствий и/или признаков недостоверности.
+2.1.6. Соблюдать условия и ограничения пользования и распоряжения внешнеторговым грузом, в отношении которого таможенное оформление еще не завершено.
+2.1.7. В период действия Договора, а также после его завершения нести полную ответственность перед «Таможенным Представителем» за убытки, причиненные «Таможенному Представителю» предоставлением ему или (и) таможенному органу недостоверных сведений и документов, в размере общей суммы причиненного ущерба.
+2.1.8. Оплачивать оказанные услуги в соответствии с п. 3 Договора.
+2.1.9. В течение 3 (Трех) рабочих дней с момента получения акта оказанных услуг, направленного «Таможенным Представителем», подписать оба экземпляра данного акта и вернуть один экземпляр «Таможенному Представителю», либо предоставить мотивированные возражения по акту. В случае нарушения «Участником ВЭД» установленного настоящим пунктом Договора срока, акт считается подписанным, а услуги «Таможенного Представителя» - оказанными надлежащим образом и подлежащими оплате в полном объеме.
+2.1.10. Возмещать «Таможенному Представителю» расходы, понесенные в интересах «Участника ВЭД» в рамках исполнения обязанностей по настоящему Договору (оплата таможенных платежей и сборов, услуг банка и прочие), а также уплаченные «Таможенным Представителем» дополнительно начисленные в результате контроля таможенной стоимости товаров «Участника ВЭД» таможенные платежи. 
+При этом таможенные платежи, взысканные с «Таможенного Представителя» в пределах сроков, установленных таможенным законодательством РФ, а также таможенного союза для проведения контроля после выпуска товаров, и уплаченные «Таможенным Представителем», подлежат возмещению «Участником ВЭД» также по истечении срока действия настоящего Договора при предоставлении «Таможенным Представителем» соответствующих подтверждающих документов.
+2.1.11. «Участник ВЭД» обязан сообщить в таможенные и/или иные государственные органы, что он является собственником или владельцем груза и взять на себя полную ответственность по урегулированию возникших претензий и требований, освобождая  «Таможенного Представителя» от такой ответственности:  в случае  возникновения ситуаций нарушения каких-либо требований в отношении декларируемых грузов, заявленных «Таможенным Представителем», или процедуры декларирования (в частности, если таможенными органами выявлены качественные или количественные характеристики и особенности грузов, которые не были сообщены «Участником ВЭД», либо «Таможенному Представителю» была сообщена недостоверная информация об этих характеристиках или особенностях грузов, либо у таможенных и/или иных государственных органов возникли претензии, касающиеся пошлин или обязательных платежей, осуществляемых «Участником ВЭД», либо недостатков, разночтений или некомплектности документов, предоставленных «Участником ВЭД» и т.д.), при которых таможенными и/или иными государственными органами возбуждается дело об административном производстве.
+2.1.12. Выдать «Таможенному Представителю» доверенность  необходимую для выполнения последним своих обязанностей по Договору.
+2.2.	«Таможенный Представитель» обязан:
+2.2.1.	 По поручению «Участника ВЭД» совершать юридические действия и оказывать услуги по таможенному оформлению внешнеторговых грузов, а также выполнять иные работы и оказывать «Участнику ВЭД» прочие услуги помимо таможенного оформления, в соответствии с предметом настоящего Договора.
+2.2.2.	 Запрашивать у «Участника ВЭД» документы и сведения, необходимые для исполнения обязательств по настоящему Договору.
+2.2.3.	 Незамедлительно сообщать «Участнику ВЭД» об обнаруженных ошибках, неточностях, противоречиях, некомплектности в представленных ему документах и сведениях с целью принятия мер к их уточнению и скорейшему исправлению, а также недопущению причинения ущерба интересам Сторон по Договору.
+2.2.4.	 Своевременно информировать «Участника ВЭД» о требованиях таможенного органа, возникающих в процессе таможенного контроля товаров.
+2.2.5.	 В необходимых согласованных случаях принимать от «Участника ВЭД» авансовый платеж в обеспечение его обязательств по Договору.
+2.2.6.	 По факту оказания услуг «Таможенный Представитель» обязан в течение 7 (Семи) рабочих дней предоставить «Участнику ВЭД» все документы, оформленные им от имени «Участника ВЭД», и иные документы, свидетельствующие о выполнении им своих обязательств по Договору, а также документы, подтверждающие понесенные «Таможенным Представителем» в интересах «Участника ВЭД» расходы.
+2.2.7.	 Использовать информацию, полученную от «Участника ВЭД» для таможенных целей, исключительно в этих целях. Обеспечивать соблюдение предусмотренных законодательством РФ запретов и ограничений на разглашение, использование в собственных целях, передачу третьим лицам, а также органам государственной власти РФ, полученной от представляемого лица информации, составляющей коммерческую, банковскую или иную охраняемую законом тайну.
+2.2.8.	 Предварительно по запросу «Участника ВЭД» рассчитывать суммы подлежащих уплате  таможенных платежей.
+2.2.9.	 Зарегистрировать Договор в соответствии с правилами, установленными таможенным законодательством РФ, предусматривающими отчетность «Таможенного Представителя» перед таможенными органами. 
+2.2.10.	Не позднее 10 (Десятого) числа месяца, следующего за месяцем, в котором были оказаны услуги, оформлять исполнение обязательств по Договору актами оказанных услуг и направлять два подписанных экземпляра акта «Участнику ВЭД».
+2.2.11.	По требованию таможенного органа и/или по согласованию с «Участником ВЭД» уплачивать за «Участника ВЭД» таможенные платежи, возмещаемые последним в порядке, установленном п. 2.1.4 к Договору.
+2.3.	 «Таможенный Представитель» имеет право:
+2.3.1.	Проверять достоверность сведений и документов, предоставляемых «Участником ВЭД».
+2.3.2.	Присутствовать при таможенном оформлении товаров и транспортных средств, при взятии проб и образцов товаров, поступающих в адрес «Участника ВЭД» в целях таможенного оформления этих товаров в порядке, предусмотренном таможенным  законодательством РФ.
+2.3.3.	Требовать от «Участника ВЭД» представления документов и сведений, необходимых для таможенных целей, в том числе содержащих информацию, составляющую коммерческую, банковскую или иную охраняемую законом тайну, либо являющуюся конфиденциальной информацией, и получать такие документы для соблюдения требований таможенного законодательства РФ.
+2.3.4.	Привлекать для исполнения своих обязательств по настоящему Договору третьих лиц, если из закона или иных правовых актов не вытекает обязанность «Таможенного Представителя» исполнить такое обязательство лично.
+
+3.	СТОИМОСТЬ УСЛУГ И ПОРЯДОК РАСЧЕТОВ
+
+3.1. Стоимость услуг по Договору определяется в соответствии с тарифами утвержденными ООО «ПИТЕРТРАНС», действующими на дату подачи заявки клиентом.
+При оказании «Таможенным Представителем» дополнительных услуг Стороны производят взаиморасчеты на условиях, оговоренных в Приложениях/Дополнительных соглашениях к настоящему Договору.
+3.2. Оплата услуг «Таможенного Представителя» производится в валюте Российской Федерации. В случае согласования Сторонами стоимости услуг в иностранной валюте расчеты производятся в рублях РФ по курсу иностранной валюты, установленному ЦБ РФ на дату выставления счета, если иное не согласовано Сторонами в Приложениях/Дополнительных соглашениях к Договору.
+3.3. Оплата услуг «Таможенного Представителя», а также возмещение понесенных расходов производится «Участником ВЭД» в течение 5 (Пяти) банковских дней с момента получения «Участником ВЭД» счета и акта оказанных услуг «Таможенного Представителя».
+Стороны признают, что счет, переданный посредством факсимильной или электронной связи, является основанием для оплаты  услуг. В случае возникновения дополнительных расходов, «Участник ВЭД» производит их оплату сразу после подписания Сторонами акта выполненных работ либо после выставления дополнительного счета также в течение 5 (Пяти) банковских дней.
+Датой оплаты услуг считается дата зачисления денежных средств на расчетный счет «Таможенного Представителя».
+3.4. По договоренности Сторон, на усмотрение «Участника ВЭД» может быть сделана предоплата на расчётный счет «Таможенного Представителя». Окончательная оплата услуг «Таможенного Представителя» производится в порядке, установленном п. 3.3. Договора.
+
+4.	ОТВЕТСТВЕННОСТЬ СТОРОН И ПОРЯДОК РЕШЕНИЯ СПОРОВ
+
+4.1. Основания и порядок ответственности Сторон, не оговоренные в Договоре, определяются по общим правилам гражданского законодательства РФ. 
+4.2. «Таможенный Представитель» несет полную ответственность за правильность и своевременность таможенного оформления товаров и транспортных средств «Участника ВЭД» при соблюдении последним п.п. 2.1.1. – 2.1.6. настоящего Договора.
+При невыполнении «Участником ВЭД» условий, установленных в  п.п. 2.1.1. – 2.1.6.  настоящего Договора «Таможенный Представитель» не несёт ответственность за нарушение сроков подачи и выпуска грузовых таможенных деклараций.
+4.3. «Таможенный Представитель» не несет ответственности за несвоевременное оформление таможенной декларации и завершение таможенного оформления в случае требований таможенного органа о проведении дополнительных процедур по контролю товара.
+4.4. В случае несвоевременной оплаты «Участником ВЭД» оказанных «Таможенным Представителем» услуг и/или несвоевременного возмещения понесенных «Таможенным Представителем» расходов, «Таможенный Представитель» вправе потребовать уплаты штрафной неустойки в размере 0,1 %  (Ноля целых одной десятой процента) от неоплаченной суммы за каждый день просрочки в ее оплате.
+4.5. «Участник ВЭД» несет ответственность и обязан возместить «Таможенному Представителю» все убытки (в том числе, штрафы, пени, дополнительные таможенные платежи, наложенные/взысканные таможенными органами), возникшие в связи с выявленной в процессе таможенного оформления, либо после его завершения недостоверностью или недостаточностью данных, содержащихся в документах, предоставленных «Участником ВЭД» «Таможенному Представителю». Указанная ответственность может быть возложена на «Участника ВЭД» также после прекращения действия настоящего Договора, но в пределах сроков таможенного контроля.
+4.6. Все споры или разногласия, возникающие по настоящему Договору или в связи с ним, разрешаются Сторонами путем переговоров.
+4.7. В случае невозможности разрешения разногласий путем переговоров между Сторонами, споры подлежат рассмотрению в Арбитражном суде Санкт-Петербурга и Ленинградской области. 
+4.8. До предъявления в арбитражный суд иска к «Таможенному Представителю» обязательно соблюдение претензионного порядка урегулирования спора. Претензия подлежит рассмотрению в течение 10 (Десяти) рабочих дней с момента ее получения.
+
+5. ОБСТОЯТЕЛЬСТВА НЕПРЕОДОЛИМОЙ СИЛЫ
+
+5.1. Стороны не несут ответственность за невыполнение обязательств по Договору, обусловленных обстоятельствами непреодолимой силы, возникающими помимо воли Сторон и которые нельзя предвидеть или избежать, включая стихийные бедствия и другие обстоятельства, если возникновение названных обстоятельств препятствует или существенно затрудняет исполнение обязательств по Договору.
+5.2. Если эти обстоятельства будут продолжаться более двух месяцев, каждая из Сторон будет иметь право отказаться от дальнейшего исполнения обязательств по настоящему Договору, и в этом случае ни одна из Сторон не будет иметь права на возмещение другой Стороной возможных убытков.
+5.3. Свидетельство, выданное соответствующим компетентным учреждением, является подтверждением наличия обстоятельств непреодолимой силы.
+5.4. «Таможенный Представитель» полностью освобождается от ответственности перед «Участником ВЭД» за невыполнение обязательств по Договору, обусловленного принятием таможенными органами правовых актов и иных документов, действие которых препятствует или ограничивает исполнение обязательств «Таможенного Представителя» по Договору. В этих случаях «Таможенный Представитель» в течение 10 (Десяти) дней с момента принятия или доведения до сведения «Таможенного Представителя» действия названных документов уведомляет «Участника ВЭД» о действии указанных документов.
+
+6. СРОК ДЕЙСТВИЯ ДОГОВОРА. ПОРЯДОК РАСТОРЖЕНИЯ ДОГОВОРА
+
+6.1. Договор вступает в силу с момента его подписания и действует до 31 декабря 2021 г., а в части взаиморасчетов - до выполнения Сторонами всех своих обязательств по настоящему Договору. 
+Если за 30 (Тридцать) дней до наступления вышеуказанного срока ни одна из Сторон не выразит намерения расторгнуть данный Договор, Договор считается продленным на каждый следующий календарный год.
+6.2. Стороны вправе расторгнуть настоящий Договор по взаимному письменному согласию. Настоящий Договор может быть расторгнут по инициативе одной из Сторон, о чем она должна уведомить другую Сторону не позднее чем за 2 (Два) месяца до даты расторжения Договора.
+6.3. При наличии у «Таможенного Представителя» достаточных оснований полагать, что действия или бездействие «Участника ВЭД» являются противоправными и влекущими уголовную либо административную ответственность, Договор может быть расторгнут «Таможенным Представителем» в одностороннем порядке. При этом Договор будет считаться расторгнутым с момента письменного отказа «Таможенного Представителя» от его исполнения. Услуги «Таможенного Представителя», оказанные до момента расторжения Договора, оплачиваются «Участником ВЭД» в течение 2 (Двух) дней со дня выставления «Таможенным Представителем» счета.
+6.4. По инициативе любой из Сторон Договор может быть расторгнут в случае исключения «Таможенного Представителя» из Реестра таможенных брокеров (представителей) ФТС РФ. При этом «Таможенный Представитель» не несет ответственности за неисполнение условий Договора после направления «Участнику ВЭД» уведомления об исключении из Реестра. Датой расторжения Договора в данном случае будет считаться дата получения соответствующего уведомления Стороны – инициатора другой Стороной.
+6.5. «Участник ВЭД» не вправе расторгнуть Договор с «Таможенным Представителем» после наступления предусмотренного таможенным законодательством момента прекращения права на изъятие представленной в таможенный орган «Таможенным Представителем» таможенной декларации на товары, в которой заявлены сведения о товарах, до момента завершения таможенного оформления таких товаров.
+
+7. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ
+
+7.1. Договор составлен на русском языке в двух экземплярах, по одному для каждой из Сторон. Все экземпляры идентичны и имеют одинаковую юридическую силу. Оба экземпляра Договора визируются на каждой странице уполномоченными лицами правовых подразделений Сторон, либо непосредственно подписантами Договора.
+7.2. Приложения, Дополнительные соглашения к Договору являются его неотъемлемой частью при условии их подписания уполномоченными представителями Сторон.
+7.3. Стороны признают юридическую силу документов, направленных ими друг другу посредством факсимильной или электронной связи. Любые факсимильные или электронные отправления считаются заявленными с момента их направления по факсу или электронной почте с получением подтверждения о получении отправления адресатом.
+
+«Таможенный Представитель»	«Участник ВЭД»	
+Общество с ограниченной ответственностью «ПИТЕРТРАНС»	Индивудуальный предприниматель Шелемба Василий Иванович
+	
+Юридический адрес: 
+195273, г. Санкт-Петербург, Пискаревский пр-кт, 
+дом № 150, корпус 2, литера Н
+Фактический адрес: 
+196084, г. Санкт-Петербург, Московский пр-кт, 91, 
+офис 224-226
+ИНН / КПП 7805183060 / 780601001
+ОКПО 54260849  ОГРН 1037811038891
+Тел./факс: +7 (812) 677-10-62
+E-mail:
+ р/с № 40702810390330001036
+в   ПАО &quot;БАНК &quot;САНКТ-ПЕТЕРБУРГ&quot;
+БИК 044030790
+к/с 30101810900000000790	Юридический адрес: 188907, Ленинградская область, Выборгский р-н, пос. Большое поле
+Фактический адрес: 188900, Ленинградская область, г. Выборг, Школьный пер. д. 1, кв. 8.
+ИНН / КПП 470400136393/0
+ОКПО       / ОГРН 304470407600093
+Тел./факс: (881378) 23 974; 8 921 741 75 13
+e-mail: vshelemba@yandex.ru
+р/с № 40802810300480000605
+в  Филиал «Северо-Западный» Банка ВТБ (ПАО)  г. Санкт-Петербург
+БИК 044030832
+к/с 30101810940300000832
+
+
+Директор	
+       Руководитель	
+______________________ /Баскин Г.М. /	_______________________/Шелемба В.И./
+
+М. п.	М. п.	
+8. ЮРИДИЧЕСКИЕ АДРЕСА СТОРОН
+</crc:AdditionalInformation>
+        <crc:CustomsRepresentative>
+            <cat_ru:OrganizationName>ПИТЕРТРАНС ООО</cat_ru:OrganizationName>
+            <cat_ru:RFOrganizationFeatures>
+                <cat_ru:OGRN>1037811038891</cat_ru:OGRN>
+                <cat_ru:INN>7805183060</cat_ru:INN>
+                <cat_ru:KPP>780601001</cat_ru:KPP>
+            </cat_ru:RFOrganizationFeatures>
+            <RUScat_ru:SubjectAddressDetails>
+                <RUScat_ru:PostalCode>195273</RUScat_ru:PostalCode>
+                <RUScat_ru:CountryCode>RU</RUScat_ru:CountryCode>
+                <RUScat_ru:CounryName>РОССИЯ</RUScat_ru:CounryName>
+                <RUScat_ru:City>Санкт-Петербург</RUScat_ru:City>
+                <RUScat_ru:StreetHouse>Пискаревский проспект, дом 150, корп. 2, литер Н</RUScat_ru:StreetHouse>
+            </RUScat_ru:SubjectAddressDetails>
+            <crc:CustomsRepresCertificate>
+                <cat_ru:PrDocumentNumber>0895/00</cat_ru:PrDocumentNumber>
+                <cat_ru:PrDocumentDate>2018-06-18</cat_ru:PrDocumentDate>
+            </crc:CustomsRepresCertificate>
+        </crc:CustomsRepresentative>
+        <crc:Declarant>
+            <cat_ru:OrganizationName>ИП ШЕЛЕМБА ВАСИЛИЙ ИВАНОВИЧ (ИНН 470400136393)</cat_ru:OrganizationName>
+            <cat_ru:RFOrganizationFeatures>
+                <cat_ru:OGRN>304470407600093</cat_ru:OGRN>
+                <cat_ru:INN>470400136393</cat_ru:INN>
+            </cat_ru:RFOrganizationFeatures>
+            <RUScat_ru:SubjectAddressDetails>
+                <RUScat_ru:PostalCode>188907</RUScat_ru:PostalCode>
+                <RUScat_ru:CountryCode>RU</RUScat_ru:CountryCode>
+                <RUScat_ru:CounryName>РОССИЯ</RUScat_ru:CounryName>
+                <RUScat_ru:Region>Ленинградская обл., Выборгский р-н</RUScat_ru:Region>
+                <RUScat_ru:City>пос. Большое поле</RUScat_ru:City>
+                <RUScat_ru:StreetHouse>Б/Н</RUScat_ru:StreetHouse>
+            </RUScat_ru:SubjectAddressDetails>
+            <crc:DeclarantModeCode>ю</crc:DeclarantModeCode>
+        </crc:Declarant>
+        <crc:ContractDetails>
+            <cat_ru:PrDocumentNumber>0807/00-17-087Т </cat_ru:PrDocumentNumber>
+            <cat_ru:PrDocumentDate>2018-06-18</cat_ru:PrDocumentDate>
+            <crc:StartDate>2018-06-18</crc:StartDate>
+            <crc:ExpiryDate>2021-12-31</crc:ExpiryDate>
+        </crc:ContractDetails>
+        <crc:RepresentativeDetails>
+            <crc:RepresentativeIndicator>0</crc:RepresentativeIndicator>
+        </crc:RepresentativeDetails>
+    </crc:CustomsRepresContract>
+</fts:Object>
+                            </fts:Signature>
+                        </edrs:DocResponseBody>
+                    </edrs:DocResponseAdd>
+                    <edrs:ArchiveInformation>
+                        <edrs:ArchDocAlbum>5.15.0</edrs:ArchDocAlbum>
+                        <edrs:ArchDocDate>2020-05-15</edrs:ArchDocDate>
+                    </edrs:ArchiveInformation>
+                </edrs:EPS_DocResponse>
+            </ns159:Object>
+        </Signature:Signature>
+    </ns5:Body>
+</ns5:Envelope>

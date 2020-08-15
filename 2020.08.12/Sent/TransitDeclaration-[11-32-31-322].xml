@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:ri="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:at="urn:customs.ru:Envelope:Attachments:1.0" xmlns:ai="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:env="http://www.w3.org/2001/06/soap-envelope">
+  <env:Header>
+    <ai:ApplicationInf>
+      <ai:MessageKind>RNTS.101.030</ai:MessageKind>
+      <ai:SoftKind>524000</ai:SoftKind>
+      <ai:SoftVersion>9.1</ai:SoftVersion>
+    </ai:ApplicationInf>
+    <ri:RoutingInf>
+      <ri:EnvelopeID>be250d62-a658-4153-b69b-ea0f455fe39b</ri:EnvelopeID>
+      <ri:PreparationDateTime>2020-08-12T11:32:31</ri:PreparationDateTime>
+      <ri:ReceiverInformation>WMQ://RU.FTS.SZTU/RNTS.INCOME</ri:ReceiverInformation>
+      <ri:SenderInformation>WMQ://RU.FTS.SZTU.MRM.SLL/RNTS.CLIENTQ.03</ri:SenderInformation>
+    </ri:RoutingInf>
+  </env:Header>
+  <env:Body>
+    <Signature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1" />
+        <SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256" />
+        <Reference URI="#KeyInfo">
+          <Transforms>
+            <Transform Algorithm="urn:xml-dsig:transformation:v1.1" />
+          </Transforms>
+          <DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256" />
+          <DigestValue>+fZg5Q4pZZyTfjZ3a56cg8fwBvC7u80qlG+8F5ymChY=</DigestValue>
+        </Reference>
+        <Reference URI="#Object">
+          <Transforms>
+            <Transform Algorithm="urn:xml-dsig:transformation:v1.1" />
+          </Transforms>
+          <DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256" />
+          <DigestValue>nPybbjEuDxjcO4m8urj+16lRiQQtvxjp+jT0SalHV9U=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>MIIFKAYJKoZIhvcNAQcCoIIFGTCCBRUCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHATGCBPEwggTtAgEBMIIB4DCCAckxIDAeBgkqhkiG9w0BCQEWEXZ1Y0BjYS5jdXN0b21zLnJ1MRgwFgYFKoUDZAESDTExMTc3NDY4ODk5NDExGjAYBggqhQMDgQMBARIMMDA3NzMwNjU0NDcxMQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRkwFwYDVQQHDBDQsy4g0JzQvtGB0LrQstCwMTMwMQYDVQQJDCrRg9C7LiDQndC+0LLQvtC30LDQstC+0LTRgdC60LDRjywg0LQuIDExLzUxezB5BgNVBAoMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtTF7MHkGA1UEAwxy0KbQtdC90YLRgNCw0LvRjNC90L7QtSDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Qvi3RgtC10YXQvdC40YfQtdGB0LrQvtC1INGC0LDQvNC+0LbQtdC90L3QvtC1INGD0L/RgNCw0LLQu9C10L3QuNC1AhEA4LLZesQM6oDqEd8fcmr0FTAMBggqhQMHAQECAgUAoIICpDAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMDA4MTIwODMyMjVaMC8GCSqGSIb3DQEJBDEiBCDcKedLEnHlOf7u8TiL/nR3aSrz16dm8D/WvYSpRqC0RDCCAjcGCyqGSIb3DQEJEAIvMYICJjCCAiIwggIeMIICGjAKBggqhQMHAQECAgQgg/23C5qrTLdWPll1ag5CLsLdYYNewImfHmm+c5XMyrAwggHoMIIB0aSCAc0wggHJMSAwHgYJKoZIhvcNAQkBFhF2dWNAY2EuY3VzdG9tcy5ydTEYMBYGBSqFA2QBEg0xMTE3NzQ2ODg5OTQxMRowGAYIKoUDA4EDAQESDDAwNzczMDY1NDQ3MTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDEzMDEGA1UECQwq0YPQuy4g0J3QvtCy0L7Qt9Cw0LLQvtC00YHQutCw0Y8sINC0LiAxMS81MXsweQYDVQQKDHLQptC10L3RgtGA0LDQu9GM0L3QvtC1INC40L3RhNC+0YDQvNCw0YbQuNC+0L3QvdC+LdGC0LXRhdC90LjRh9C10YHQutC+0LUg0YLQsNC80L7QttC10L3QvdC+0LUg0YPQv9GA0LDQstC70LXQvdC40LUxezB5BgNVBAMMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtQIRAOCy2XrEDOqA6hHfH3Jq9BUwDAYIKoUDBwEBAQEFAARAZtdyjL9ps8DhxB+nifFfhxclgNei5C2iABIYoxiko5zwHqxpaUph9uOJ/asWc+9Iucal5bzupyW0RRpR9rKAZQ==</SignatureValue>
+      <KeyInfo Id="KeyInfo">
+        <X509Data>
+          <X509Certificate>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AQUFBzAChlNodHRwOi8vcmEyLWNpdHR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBiBggrBgEFBQcwAoZWaHR0cDovL3JhLXNrdHUuc2t0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYQYIKwYBBQUHMAKGVWh0dHA6Ly9yYTEtcHR1LnB0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwZQYIKwYBBQUHMAKGWWh0dHA6Ly9yYTEtZHZ0dS5kdnR1cmEuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXN0dTIuc3R1Mi5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYQYIKwYBBQUHMAKGVWh0dHA6Ly9yYTEtdXR1LnV0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYwYIKwYBBQUHMAKGV2h0dHA6Ly9yYTEtc3p0dS5zenR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBgBggrBgEFBQcwAoZUaHR0cDovL3JhLWN0dS5jdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYwYIKwYBBQUHMAKGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLWR2dHUuZHZ0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYwYIKwYBBQUHMAKGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MAoGCCqFAwcBAQMCA0EA6GqKrhfZzTpGYn+HZ6XsTidM0E+JpCXAN2AZlAotiuf3lTDemAhaXKlFHusltdAGblMMhzS+9eRiC5wN0IA8Bg==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+      <Object Id="Object">
+        <n7:RNTS_TransitDeclaration xmlns:n2="urn:customs.ru:CommonLeafTypes:2.7.12" xmlns:n3="urn:customs.ru:RNTS:CommonLeafTypes:1.0" xmlns:n1="urn:customs.ru:RNTS:CommonAgregateTypes:1.0" DocumentModeID="1006901E" xmlns:n7="urn:customs.ru:RNTS:TransitDeclaration:1.0">
+          <n1:DocumentModeID>1006945E</n1:DocumentModeID>
+          <n1:DocumentID>3202005b-5977-4ad4-90de-6ab426c35f59</n1:DocumentID>
+          <n1:RefExternalDocumentID>5E246E9E-BE19-49CC-A17D-E7262AF1500D</n1:RefExternalDocumentID>
+          <n1:ProcessID>f6d3c2c1-c148-46c8-9da6-0fb789890427</n1:ProcessID>
+          <n1:UIN>10000000/100820/4147083</n1:UIN>
+          <n1:DocumentDateTime>2020-08-12T11:28:11</n1:DocumentDateTime>
+          <n1:DocumentVersionNumber>2</n1:DocumentVersionNumber>
+          <n1:IsTest>false</n1:IsTest>
+          <n1:ReliefID>d082db2a-0307-472d-8b80-1605d72a41c9</n1:ReliefID>
+          <n1:RegistrationCustomsOffice>
+            <n1:CustomsCode>10207090</n1:CustomsCode>
+          </n1:RegistrationCustomsOffice>
+          <n1:CustomsOfficial>
+            <n1:Name>Козин Максим Владимирович</n1:Name>
+          </n1:CustomsOfficial>
+          <n1:DeclarationNumber>20RU20709000000871</n1:DeclarationNumber>
+          <n1:DeclarationNumberDate>2020-08-12</n1:DeclarationNumberDate>
+          <n1:StampInfo>
+            <n1:StampDateTime>2020-08-12T11:32:18</n1:StampDateTime>
+            <n1:Status>
+              <n1:Name>TD_REGISTERED</n1:Name>
+            </n1:Status>
+            <n1:CustomsOfficial>
+              <n1:Name>КОЗИН МАКСИМ ВЛАДИМИРОВИЧ</n1:Name>
+              <n1:LNPNumber> 275</n1:LNPNumber>
+              <n1:LNPCustomsCode>10207000</n1:LNPCustomsCode>
+            </n1:CustomsOfficial>
+          </n1:StampInfo>
+          <n7:Header>
+            <n1:TIRCustomsRegNumber>000087</n1:TIRCustomsRegNumber>
+            <n1:TotalNumberOfGoods>1</n1:TotalNumberOfGoods>
+            <n1:TotalNumberOfPackages>1</n1:TotalNumberOfPackages>
+            <n1:TotalGrossMass>19540.000000</n1:TotalGrossMass>
+            <n1:TotalGoodsCost>
+              <n1:InvoiceCost>74838.20</n1:InvoiceCost>
+              <n1:CurrencyCode>EUR</n1:CurrencyCode>
+            </n1:TotalGoodsCost>
+            <n1:DeclarationKind>NATIONAL</n1:DeclarationKind>
+            <n1:ElectronicDocumentSign>true</n1:ElectronicDocumentSign>
+            <n1:MovementKind>INSIDE</n1:MovementKind>
+            <n1:DeclarationDateTime>2020-08-12T11:28:11</n1:DeclarationDateTime>
+            <n1:DepartureCountryCode>SE</n1:DepartureCountryCode>
+            <n1:DestinationCountryCode>RU</n1:DestinationCountryCode>
+            <n1:TotalNumberOfTDPages>1</n1:TotalNumberOfTDPages>
+            <n1:EnsuringMeasureCode>03</n1:EnsuringMeasureCode>
+            <n1:DepartureTransport>
+              <n1:TrailerIdentity>DLK324</n1:TrailerIdentity>
+              <n1:Nationality>RU</n1:Nationality>
+              <n1:TransportMeans>
+                <n1:Identity>E313AX198</n1:Identity>
+              </n1:TransportMeans>
+              <n1:Mode>31</n1:Mode>
+            </n1:DepartureTransport>
+            <n1:CrossingBorderTransport>
+              <n1:TransportMeans>
+                <n1:Identity>000</n1:Identity>
+              </n1:TransportMeans>
+              <n1:Mode>31</n1:Mode>
+            </n1:CrossingBorderTransport>
+          </n7:Header>
+          <n7:Consignment>
+            <n1:DocumentReference>5102277876/6103011580</n1:DocumentReference>
+            <n1:DocumentDate>2020-08-10</n1:DocumentDate>
+            <n1:DocumentKind>02015</n1:DocumentKind>
+            <n1:Sequence>1</n1:Sequence>
+            <n1:Consignor>
+              <n1:Name>NOURYON SURFACE CHEMISTRY AB</n1:Name>
+              <n1:Address>
+                <n1:PostalCode>444 85</n1:PostalCode>
+                <n1:CountryCode>SE</n1:CountryCode>
+                <n1:City>STENUNGSUND</n1:City>
+                <n1:StreetHouse>UDDEVALLAVAGEN 17</n1:StreetHouse>
+              </n1:Address>
+            </n1:Consignor>
+            <n1:Consignee>
+              <n1:Name>APATIT JSC (KIROVSK BRANCH)</n1:Name>
+              <n1:INN>5103070023</n1:INN>
+              <n1:KPP>511843001</n1:KPP>
+              <n1:Address>
+                <n1:PostalCode>184250</n1:PostalCode>
+                <n1:CountryCode>RU</n1:CountryCode>
+                <n1:Region>MURMANSKAYA OBL.</n1:Region>
+                <n1:City>KIROVSK</n1:City>
+                <n1:StreetHouse>LENINGRADSKAYA 1</n1:StreetHouse>
+              </n1:Address>
+            </n1:Consignee>
+            <n1:GoodsItem>
+              <n1:ItemNumber>1</n1:ItemNumber>
+              <n1:CommodityCode>3402119000</n1:CommodityCode>
+              <n1:Description>ВЕЩЕСТВО ПОВЕРХНОСТНО-АКТИВНОЕ ОРГАНИЧЕСКОЕ, АНИОННОЕ PHOSPHOLAN PE65</n1:Description>
+              <n1:GrossMass>19540.000000</n1:GrossMass>
+              <n1:Package>
+                <n1:KindSequence>1</n1:KindSequence>
+                <n1:Kind>VL</n1:Kind>
+                <n1:NumberOfPackages>1</n1:NumberOfPackages>
+              </n1:Package>
+              <n1:GoodsCost>
+                <n1:InvoiceCost>74838.20</n1:InvoiceCost>
+                <n1:CurrencyCode>EUR</n1:CurrencyCode>
+              </n1:GoodsCost>
+            </n1:GoodsItem>
+          </n7:Consignment>
+          <n7:DepartureCustomsOffice>
+            <n1:CustomsCode>10207090</n1:CustomsCode>
+          </n7:DepartureCustomsOffice>
+          <n7:DestinationPlace>
+            <n1:CustomsCode>10207020</n1:CustomsCode>
+          </n7:DestinationPlace>
+          <n7:Principal>
+            <n1:Name>САМАТ НОРДИК ООО</n1:Name>
+            <n1:OGRN>1037804081435</n1:OGRN>
+            <n1:INN>7802225107</n1:INN>
+            <n1:KPP>780201001</n1:KPP>
+            <n1:Address>
+              <n1:PostalCode>194292</n1:PostalCode>
+              <n1:CountryCode>RU</n1:CountryCode>
+              <n1:City>САНКТ-ПЕТЕРБУРГ</n1:City>
+              <n1:StreetHouse>ДОМОСТРОИТЕЛЬНАЯ 16</n1:StreetHouse>
+            </n1:Address>
+          </n7:Principal>
+          <n7:Carrier>
+            <n1:Name>САМАТ НОРДИК ООО</n1:Name>
+            <n1:OGRN>1037804081435</n1:OGRN>
+            <n1:INN>7802225107</n1:INN>
+            <n1:KPP>780201001</n1:KPP>
+            <n1:Address>
+              <n1:PostalCode>194292</n1:PostalCode>
+              <n1:CountryCode>RU</n1:CountryCode>
+              <n1:City>САНКТ-ПЕТЕРБУРГ</n1:City>
+              <n1:StreetHouse>ДОМОСТРОИТЕЛЬНАЯ 16</n1:StreetHouse>
+            </n1:Address>
+          </n7:Carrier>
+          <n7:ProducedDocument>
+            <n1:DocumentReference>5102277876/6103011580</n1:DocumentReference>
+            <n1:DocumentDate>2020-08-10</n1:DocumentDate>
+            <n1:DocumentKind>02015</n1:DocumentKind>
+          </n7:ProducedDocument>
+          <n7:ProducedDocument>
+            <n1:DocumentReference>7436018400</n1:DocumentReference>
+            <n1:DocumentDate>2020-08-10</n1:DocumentDate>
+            <n1:DocumentKind>04021</n1:DocumentKind>
+          </n7:ProducedDocument>
+          <n7:ProducedDocument>
+            <n1:DocumentReference>1014/00</n1:DocumentReference>
+            <n1:DocumentDate>2019-04-02</n1:DocumentDate>
+            <n1:DocumentKind>09034</n1:DocumentKind>
+          </n7:ProducedDocument>
+          <n7:ProducedDocument>
+            <n1:DocumentReference>BX № 02-2019/A</n1:DocumentReference>
+            <n1:DocumentDate>2019-04-11</n1:DocumentDate>
+            <n1:DocumentKind>11002</n1:DocumentKind>
+          </n7:ProducedDocument>
+          <n7:Guarantee>
+            <n1:GuaranteeDocumentKind>GUARANTEE_CONTRACT_ADDITION_245</n1:GuaranteeDocumentKind>
+            <n1:OtherGuaranteeNumber>10000000/100820/0309653</n1:OtherGuaranteeNumber>
+          </n7:Guarantee>
+          <n7:TransitDateLimit>
+            <n1:DateLimit>2020-08-13</n1:DateLimit>
+          </n7:TransitDateLimit>
+          <n7:RegistrationInfo>
+            <n1:RegistrationDateTime>2020-08-12T11:32:18</n1:RegistrationDateTime>
+            <n1:CustomsOfficial>
+              <n1:Name>КОЗИН МАКСИМ ВЛАДИМИРОВИЧ</n1:Name>
+              <n1:LNPNumber> 275</n1:LNPNumber>
+              <n1:LNPCustomsCode>10207000</n1:LNPCustomsCode>
+            </n1:CustomsOfficial>
+          </n7:RegistrationInfo>
+          <n7:ServiceInfo>
+            <n1:IsAutoRegistration>1</n1:IsAutoRegistration>
+            <n1:TDSubmissionDateTime>2020-08-12T11:27:49</n1:TDSubmissionDateTime>
+            <n1:TRAllowedPriorityProcessing>0</n1:TRAllowedPriorityProcessing>
+            <n1:AutoReleaseSign>0</n1:AutoReleaseSign>
+          </n7:ServiceInfo>
+          <n7:AutoRegistrationViolationProtocol>
+            <n1:AlgorithmType>1</n1:AlgorithmType>
+            <n1:DateTime>2020-08-10T12:02:48</n1:DateTime>
+            <n1:FLCViolationInfo>
+              <n1:Group>180</n1:Group>
+              <n1:Code>T014</n1:Code>
+              <n1:Description>Проверка сведений о коде товаров (на уровне 6 знаков) в подтверждении о прибытии (из АС «ПП»), со сведениями в графе 33 ЭТД</n1:Description>
+              <n1:CheckerCode>AR-05.01.006</n1:CheckerCode>
+              <n1:AdditionalInfo>Сведения о регистрации прибытия по УИН ТД отсутствуют в АС «ПП», в графе 44 ЭТД отсутствует документ с кодом 10045 для запроса в АС «ПП»</n1:AdditionalInfo>
+            </n1:FLCViolationInfo>
+            <n1:FLCViolationInfo>
+              <n1:Group>180</n1:Group>
+              <n1:Code>T015</n1:Code>
+              <n1:Description>Проверка сведений о весе (брутто) товаров в подтверждении о прибытии (из АС «ПП»), со сведениями в графе 35 ЭТД</n1:Description>
+              <n1:CheckerCode>AR-05.01.007</n1:CheckerCode>
+              <n1:AdditionalInfo>Сведения о регистрации прибытия по УИН ТД отсутствуют в АС «ПП», в графе 44 ЭТД отсутствует документ с кодом 10045 для запроса в АС «ПП»</n1:AdditionalInfo>
+            </n1:FLCViolationInfo>
+            <n1:FLCViolationInfo>
+              <n1:Group>180</n1:Group>
+              <n1:Code>T010</n1:Code>
+              <n1:Description>Контроль наличия в АС «ПП» подтверждения о прибытии по таможенному номеру накладной</n1:Description>
+              <n1:CheckerCode>AR-05.01.002</n1:CheckerCode>
+              <n1:AdditionalInfo>Сведения о регистрации прибытия по УИН ТД в АС «ПП» и документ с кодом 10045 для запроса в АС «ПП» отсутствуют</n1:AdditionalInfo>
+            </n1:FLCViolationInfo>
+            <n1:UIN>10000000/100820/4147083</n1:UIN>
+          </n7:AutoRegistrationViolationProtocol>
+          <n7:CheckOnDuplicates>
+            <n1:IsCheckedOnDuplicates>true</n1:IsCheckedOnDuplicates>
+          </n7:CheckOnDuplicates>
+        </n7:RNTS_TransitDeclaration>
+      </Object>
+    </Signature>
+  </env:Body>
+</env:Envelope>

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns5:Envelope xmlns:ns2="urn:customs.ru:Envelope:Attachments:1.0" xmlns:ns3="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns4="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns5="http://www.w3.org/2001/06/soap-envelope" xmlns:ns6="urn:customs.ru:SimpleBody:1.0.0" xmlns:ns7="urn:customs.ru:MonitoringInfo:1.0.0" xmlns:ns8="urn:customs.ru:CommonAggregateTypes:4.2.0" xmlns:ns9="urn:customs.ru:PR:1.0.0" xmlns:ns10="urn:customs.ru:MonitoringTestDoc:1.0.0" xmlns:ns11="urn:customs.ru:MonitoringInquiry:1.0.0">
+    <ns5:Header>
+        <ns3:RoutingInf>
+            <ns3:EnvelopeID>E1C0E73E-0A15-2A8A-3DA9-4E23D7A290D4</ns3:EnvelopeID>
+            <ns3:SenderInformation>WMQ://RU.FTS/RNTS.INCOME</ns3:SenderInformation>
+            <ns3:ReceiverInformation>WMQ://RU.FTS.SZTU.MRM.SLL/RNTS.CLIENTQ.SVC</ns3:ReceiverInformation>
+            <ns3:PreparationDateTime>2020-08-12T11:19:42.526+03:00</ns3:PreparationDateTime>
+            <ns3:Priority>4</ns3:Priority>
+        </ns3:RoutingInf>
+        <ns4:ApplicationInf>
+            <ns4:SoftKind>ASKTT2-НЮГК</ns4:SoftKind>
+            <ns4:SoftVersion>1.0.0.0</ns4:SoftVersion>
+            <ns4:MessageKind>RNTS.101.111</ns4:MessageKind>
+        </ns4:ApplicationInf>
+        <ns160:SenderInf xmlns:ns160="urn:customs.ru:Envelope:SenderInf:1.0" xmlns:ns101="urn:customs.ru:RNTS:ED_Container:1.0" xmlns:ns159="http://www.w3.org/2000/09/xmldsig#" xmlns:ns161="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns162="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns163="http://www.w3.org/2001/06/soap-envelope" xmlns:ns3="urn:customs.ru:RNTS:CommonAgregateTypes:1.0" xmlns:ns83="urn:customs.ru:RNTS:ExternalDocsMsgTypes:1.0" xmlns:ns97="urn:customs.ru:RNTS:FLCViolationProtocol:1.0" xmlns:ns98="urn:customs.ru:RNTS:ExternalEDContainer:1.0">
+            <ns160:type>SERVER</ns160:type>
+            <ns160:id>10000000</ns160:id>
+        </ns160:SenderInf>
+    </ns5:Header>
+    <ns5:Body>
+        <Signature:Signature xmlns:Signature="http://www.w3.org/2000/09/xmldsig#" xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns101="urn:customs.ru:RNTS:ED_Container:1.0" xmlns:ns159="http://www.w3.org/2000/09/xmldsig#" xmlns:ns160="urn:customs.ru:Envelope:SenderInf:1.0" xmlns:ns161="urn:customs.ru:Envelope:RoutingInf:1.0" xmlns:ns162="urn:customs.ru:Envelope:ApplicationInf:1.0" xmlns:ns163="http://www.w3.org/2001/06/soap-envelope" xmlns:ns3="urn:customs.ru:RNTS:CommonAgregateTypes:1.0" xmlns:ns83="urn:customs.ru:RNTS:ExternalDocsMsgTypes:1.0" xmlns:ns97="urn:customs.ru:RNTS:FLCViolationProtocol:1.0" xmlns:ns98="urn:customs.ru:RNTS:ExternalEDContainer:1.0">
+            <ns159:SignedInfo>
+                <ns159:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                <ns159:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                <ns159:Reference URI="#KeyInfo">
+                    <ns159:Transforms>
+                        <ns159:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    </ns159:Transforms>
+                    <ns159:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                    <ns159:DigestValue>flMEI/7TXtzyqemTlc6xcaKwhhqRcIaKKO2L2Gd7aac=</ns159:DigestValue>
+                </ns159:Reference>
+                <ns159:Reference URI="#Object">
+                    <ns159:Transforms>
+                        <ns159:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    </ns159:Transforms>
+                    <ns159:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                    <ns159:DigestValue>19RAhjUGUTsp7Lq+0++UeGp7Hy/y464NXqGFVlS9b00=</ns159:DigestValue>
+                </ns159:Reference>
+            </ns159:SignedInfo>
+            <ns159:SignatureValue>MIIFKAYJKoZIhvcNAQcCoIIFGTCCBRUCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHATGCBPEwggTtAgEBMIIB4DCCAckxIDAeBgkqhkiG9w0BCQEWEXZ1Y0BjYS5jdXN0b21zLnJ1MRgwFgYFKoUDZAESDTExMTc3NDY4ODk5NDExGjAYBggqhQMDgQMBARIMMDA3NzMwNjU0NDcxMQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRkwFwYDVQQHDBDQsy4g0JzQvtGB0LrQstCwMTMwMQYDVQQJDCrRg9C7LiDQndC+0LLQvtC30LDQstC+0LTRgdC60LDRjywg0LQuIDExLzUxezB5BgNVBAoMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtTF7MHkGA1UEAwxy0KbQtdC90YLRgNCw0LvRjNC90L7QtSDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Qvi3RgtC10YXQvdC40YfQtdGB0LrQvtC1INGC0LDQvNC+0LbQtdC90L3QvtC1INGD0L/RgNCw0LLQu9C10L3QuNC1AhEA4bLZesQM3YDpEVa3MAWThDAMBggqhQMHAQECAgUAoIICpDAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMDA4MTIwODE5NDJaMC8GCSqGSIb3DQEJBDEiBCBLh5r4klNgOmiTIeXZ569iTRgGIqXTnEuVrLHi9wcUYTCCAjcGCyqGSIb3DQEJEAIvMYICJjCCAiIwggIeMIICGjAKBggqhQMHAQECAgQgnj99RI3JUg1H6jEfmsxGtmmaEPTtIz/RdKaCAu+8KZkwggHoMIIB0aSCAc0wggHJMSAwHgYJKoZIhvcNAQkBFhF2dWNAY2EuY3VzdG9tcy5ydTEYMBYGBSqFA2QBEg0xMTE3NzQ2ODg5OTQxMRowGAYIKoUDA4EDAQESDDAwNzczMDY1NDQ3MTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDEzMDEGA1UECQwq0YPQuy4g0J3QvtCy0L7Qt9Cw0LLQvtC00YHQutCw0Y8sINC0LiAxMS81MXsweQYDVQQKDHLQptC10L3RgtGA0LDQu9GM0L3QvtC1INC40L3RhNC+0YDQvNCw0YbQuNC+0L3QvdC+LdGC0LXRhdC90LjRh9C10YHQutC+0LUg0YLQsNC80L7QttC10L3QvdC+0LUg0YPQv9GA0LDQstC70LXQvdC40LUxezB5BgNVBAMMctCm0LXQvdGC0YDQsNC70YzQvdC+0LUg0LjQvdGE0L7RgNC80LDRhtC40L7QvdC90L4t0YLQtdGF0L3QuNGH0LXRgdC60L7QtSDRgtCw0LzQvtC20LXQvdC90L7QtSDRg9C/0YDQsNCy0LvQtdC90LjQtQIRAOGy2XrEDN2A6RFWtzAFk4QwDAYIKoUDBwEBAQEFAARAhC212rCLtkEsELEtspguSXODmg2ipbmr+fR4OcF2dsPRqIS0VFdYzRdYgzROQfTdiqGqnzwDXoOtvW2PtxzFMw==</ns159:SignatureValue>
+            <ns159:KeyInfo Id="KeyInfo">
+                <ns159:X509Data>
+                    <ns159:X509Certificate>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KNCy0LXRgNGB0LjRjyA0LjApMIIE9AYDVR0fBIIE6zCCBOcwLaAroCmGJ2h0dHA6Ly92dWMuY3VzdG9tcy5ydS9jZHAvY2Ffc3Z1Y3RvLmNybDBMoEqgSIZGaHR0cDovL3N2dWN0b3MuZ25pdmMuZWFpcy5jdXN0b21zLnJ1L2ltYWdlcy9zdG9yaWVzL2ZpbGUvY2Ffc3Z1Y3RvLmNybDBZoFegVYZTaHR0cDovL3JhMi1jaXR0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwXKBaoFiGVmh0dHA6Ly9yYS1za3R1LnNrdHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMFugWaBXhlVodHRwOi8vcmExLXB0dS5wdHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF+gXaBbhllodHRwOi8vcmExLWR2dHUuZHZ0dXJhLnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS1zdHUyLnN0dTIuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMFugWaBXhlVodHRwOi8vcmExLXV0dS51dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF2gW6BZhldodHRwOi8vcmExLXN6dHUuc3p0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwWqBYoFaGVGh0dHA6Ly9yYS1jdHUuY3R1LnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMF2gW6BZhldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9jZHAvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcmwwXaBboFmGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2NkcC9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNybDBdoFugWYZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvY2RwL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3JsMIIE7AYIKwYBBQUHAQEEggTeMIIE2jA1BggrBgEFBQcwAoYpaHR0cDovL3Z1Yy5jdXN0b21zLnJ1L2NkcC91Y19jaXR0dV8xMi5jZXIwVAYIKwYBBQUHMAKGSGh0dHA6Ly9zdnVjdG9zLmduaXZjLmVhaXMuY3VzdG9tcy5ydS9pbWFnZXMvc3Rvcmllcy9maWxlL3VjX2NpdHR1XzEyLmNlcjBfBggrBgEFBQcwAoZTaHR0cDovL3JhMi1jaXR0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYgYIKwYBBQUHMAKGVmh0dHA6Ly9yYS1za3R1LnNrdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGEGCCsGAQUFBzAChlVodHRwOi8vcmExLXB0dS5wdHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGUGCCsGAQUFBzAChllodHRwOi8vcmExLWR2dHUuZHZ0dXJhLnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS1zdHUyLnN0dTIuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGEGCCsGAQUFBzAChlVodHRwOi8vcmExLXV0dS51dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXN6dHUuc3p0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYAYIKwYBBQUHMAKGVGh0dHA6Ly9yYS1jdHUuY3R1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDBjBggrBgEFBQcwAoZXaHR0cDovL3JhMS15dXR1Lnl1dHUuc3Z1Y3RvLmN1c3RvbXMucnUvYWlhL2Y5MDM1NTEwZTZhZTgyMTE5NGI0YjcxMDdiMzFhNzQzNGM0ZjE3YjQuY3J0MGMGCCsGAQUFBzAChldodHRwOi8vcmExLXl1dHUueXV0dS5zdnVjdG8uY3VzdG9tcy5ydS9haWEvZjkwMzU1MTBlNmFlODIxMTk0YjRiNzEwN2IzMWE3NDM0YzRmMTdiNC5jcnQwYwYIKwYBBQUHMAKGV2h0dHA6Ly9yYTEteXV0dS55dXR1LnN2dWN0by5jdXN0b21zLnJ1L2FpYS9mOTAzNTUxMGU2YWU4MjExOTRiNGI3MTA3YjMxYTc0MzRjNGYxN2I0LmNydDAKBggqhQMHAQEDAgNBAPs3Pr6QrfSbaOJjQDymkfy7FL3SoOa03QOF2rvBxnWrwgMz/Bxn7CWp0dtV1QScX75f7mbIRpo530hB3Iwx4bY=</ns159:X509Certificate>
+                </ns159:X509Data>
+            </ns159:KeyInfo>
+            <ns159:Object Id="Object">
+                <ns101:RNTS_EDContainer DocumentModeID="1007051E">
+                    <ns3:DocumentModeID>1007051E</ns3:DocumentModeID>
+                    <ns3:DocumentID>E1C0E72E-0A15-2A8A-4DCB-BF61F819F0C2</ns3:DocumentID>
+                    <ns3:RefDocumentID>E1C0E72E-0A15-2A8A-730C-CE89D2CB79DE</ns3:RefDocumentID>
+                    <ns3:DocumentDateTime>2020-08-12T11:19:42</ns3:DocumentDateTime>
+                    <ns3:DocumentVersionNumber>1</ns3:DocumentVersionNumber>
+                    <ns3:IsTest>false</ns3:IsTest>
+                    <ns101:Docs>
+                        <ns98:RNTS_ExternalEDContainer DocumentModeID="1006983E">
+                            <ns3:DocumentModeID>1006983E</ns3:DocumentModeID>
+                            <ns3:DocumentID>E1C0E71E-0A15-2A8A-7603-A8F4A594B9C4</ns3:DocumentID>
+                            <ns3:RefDocumentID>E1C0E71E-0A15-2A8A-2FCB-F0277C83E5FD</ns3:RefDocumentID>
+                            <ns3:ProcessID>b96eabce-4dc4-487c-aa1f-877b8b1fde13</ns3:ProcessID>
+                            <ns3:UIN>10000000/110820/4151318</ns3:UIN>
+                            <ns3:DocumentDateTime>2020-08-12T11:19:42</ns3:DocumentDateTime>
+                            <ns3:DocumentVersionNumber>1</ns3:DocumentVersionNumber>
+                            <ns3:IsTest>false</ns3:IsTest>
+                            <ns98:ParticipantID>102773904837112</ns98:ParticipantID>
+                            <ns98:Docs>
+<edcnt:ED_Container xmlns:edcnt="urn:customs.ru:Information:ExchangeDocuments:ED_Container:5.13.1" xmlns:cat_ru="urn:customs.ru:CommonAggregateTypes:5.10.0" xmlns:ext_cont="urn:customs.ru:RNTS:ExternalEDContainer:1.0" DocumentModeID="1006058E">
+    <cat_ru:DocumentID>21D8956B-79F9-5A53-E9AE-00D8C4084CFB</cat_ru:DocumentID>
+    <edcnt:ContainerDoc>
+        <edcnt:DocBody>
+            <fts:Signature xmlns:fts="http://www.w3.org/2000/09/xmldsig#">
+                <fts:SignedInfo>
+                    <fts:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    <fts:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                    <fts:Reference URI="#KeyInfo">
+                        <fts:Transforms>
+                            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+                        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                        <fts:DigestValue>gSrN0z5sI7o5CNgrM/XIo6Zaa9Z0awE1IF033rMXpG8=</fts:DigestValue>
+    </fts:Reference>
+                    <fts:Reference URI="#Object">
+                        <fts:Transforms>
+                            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+                        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                        <fts:DigestValue>n/2C49/nDjHOekBQuV1PrEQM39V/PUCYvjzHENjiZiQ=</fts:DigestValue>
+    </fts:Reference>
+</fts:SignedInfo>
+                <fts:SignatureValue>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</fts:SignatureValue>
+                <fts:KeyInfo Id="KeyInfo">
+                    <fts:X509Data>
+                        <fts:X509Certificate>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</fts:X509Certificate>
+    </fts:X509Data>
+</fts:KeyInfo>
+                <fts:Object Id="Object">
+                    <ESADout_CU:ESADout_CU xmlns:ESADout_CU="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.15.0" xmlns:RUDECLcat="urn:customs.ru:RUDeclCommonAggregateTypesCust:5.15.0" xmlns:RUScat_ru="urn:customs.ru:RUSCommonAggregateTypes:5.15.0" xmlns:catESAD_cu="urn:customs.ru:CUESADCommonAggregateTypesCust:5.15.0" DocumentModeID="1006107E">
+                        <cat_ru:DocumentID>7DB75CB1-7DF1-9BE1-DEEA-5645A90D5DFC</cat_ru:DocumentID>
+                        <ESADout_CU:EECEDocHeaderAddInfo>
+                            <RUScat_ru:EDocCode>R.036</RUScat_ru:EDocCode>
+                            <RUScat_ru:EDocDateTime>2020-08-11T12:16:33</RUScat_ru:EDocDateTime>
+                            <RUScat_ru:LanguageCode>RU</RUScat_ru:LanguageCode>
+        </ESADout_CU:EECEDocHeaderAddInfo>
+                        <ESADout_CU:CustomsProcedure>ТТ</ESADout_CU:CustomsProcedure>
+                        <ESADout_CU:TransitDirectionCode>ИМ</ESADout_CU:TransitDirectionCode>
+                        <ESADout_CU:RecipientCountryCode>RU</ESADout_CU:RecipientCountryCode>
+                        <ESADout_CU:ESADout_CUGoodsShipment>
+                            <catESAD_cu:TotalGoodsNumber>1</catESAD_cu:TotalGoodsNumber>
+                            <catESAD_cu:TotalPackageNumber>1</catESAD_cu:TotalPackageNumber>
+                            <catESAD_cu:TotalCustCost>64944.00</catESAD_cu:TotalCustCost>
+                            <catESAD_cu:CustCostCurrencyCode>EUR</catESAD_cu:CustCostCurrencyCode>
+                            <ESADout_CU:ESADout_CUConsignor>
+<cat_ru:OrganizationName>Tecwill OY/</cat_ru:OrganizationName>
+<cat_ru:OrganizationLanguage>RU</cat_ru:OrganizationLanguage>
+<RUScat_ru:SubjectAddressDetails>
+    <RUScat_ru:PostalCode>80100</RUScat_ru:PostalCode>
+    <RUScat_ru:CountryCode>FI</RUScat_ru:CountryCode>
+    <RUScat_ru:CounryName>ФИНЛЯНДИЯ</RUScat_ru:CounryName>
+    <RUScat_ru:City>Joensuu</RUScat_ru:City>
+    <RUScat_ru:StreetHouse>Rahtikatu 3 B</RUScat_ru:StreetHouse>
+                </RUScat_ru:SubjectAddressDetails>
+            </ESADout_CU:ESADout_CUConsignor>
+                            <ESADout_CU:ESADout_CUConsignee>
+<cat_ru:OrganizationName>Olen Betong LLC</cat_ru:OrganizationName>
+<cat_ru:OrganizationLanguage>RU</cat_ru:OrganizationLanguage>
+<cat_ru:RFOrganizationFeatures>
+    <cat_ru:OGRN>1055194037172</cat_ru:OGRN>
+    <cat_ru:INN>5190140130</cat_ru:INN>
+    <cat_ru:KPP>510501001</cat_ru:KPP>
+                </cat_ru:RFOrganizationFeatures>
+<RUScat_ru:SubjectAddressDetails>
+    <RUScat_ru:PostalCode>184381</RUScat_ru:PostalCode>
+    <RUScat_ru:CountryCode>RU</RUScat_ru:CountryCode>
+    <RUScat_ru:CounryName>РОССИЯ</RUScat_ru:CounryName>
+    <RUScat_ru:City>Kola</RUScat_ru:City>
+    <RUScat_ru:StreetHouse>Avtomobilistov st., site Nr.6</RUScat_ru:StreetHouse>
+                </RUScat_ru:SubjectAddressDetails>
+            </ESADout_CU:ESADout_CUConsignee>
+                            <ESADout_CU:ESADout_CUDeclarant>
+<cat_ru:OrganizationName>АТП НЕВСКОЕ ООО</cat_ru:OrganizationName>
+<cat_ru:OrganizationLanguage>RU</cat_ru:OrganizationLanguage>
+<cat_ru:RFOrganizationFeatures>
+    <cat_ru:OGRN>1021101121194</cat_ru:OGRN>
+    <cat_ru:INN>7813380915</cat_ru:INN>
+    <cat_ru:KPP>112101001</cat_ru:KPP>
+                </cat_ru:RFOrganizationFeatures>
+<RUScat_ru:SubjectAddressDetails>
+    <RUScat_ru:PostalCode>195030</RUScat_ru:PostalCode>
+    <RUScat_ru:CountryCode>RU</RUScat_ru:CountryCode>
+    <RUScat_ru:CounryName>РОССИЯ</RUScat_ru:CounryName>
+    <RUScat_ru:City>САНКТ ПЕТЕРБУРГ</RUScat_ru:City>
+    <RUScat_ru:StreetHouse>УЛ 3-Я ЖЕРНОВСКАЯ 23А</RUScat_ru:StreetHouse>
+                </RUScat_ru:SubjectAddressDetails>
+            </ESADout_CU:ESADout_CUDeclarant>
+                            <ESADout_CU:ESADout_CUCarrier>
+<cat_ru:OrganizationName>АТП НЕВСКОЕ ООО</cat_ru:OrganizationName>
+<cat_ru:OrganizationLanguage>RU</cat_ru:OrganizationLanguage>
+<cat_ru:RFOrganizationFeatures>
+    <cat_ru:OGRN>1021101121194</cat_ru:OGRN>
+    <cat_ru:INN>7813380915</cat_ru:INN>
+    <cat_ru:KPP>112101001</cat_ru:KPP>
+                </cat_ru:RFOrganizationFeatures>
+<RUScat_ru:SubjectAddressDetails>
+    <RUScat_ru:PostalCode>195030</RUScat_ru:PostalCode>
+    <RUScat_ru:CountryCode>RU</RUScat_ru:CountryCode>
+    <RUScat_ru:CounryName>РОССИЯ</RUScat_ru:CounryName>
+    <RUScat_ru:City>САНКТ ПЕТЕРБУРГ</RUScat_ru:City>
+    <RUScat_ru:StreetHouse>УЛ 3-Я ЖЕРНОВСКАЯ 23А</RUScat_ru:StreetHouse>
+                </RUScat_ru:SubjectAddressDetails>
+<ESADout_CU:ESADout_CUDriverInformation>
+    <cat_ru:PersonSurname>ОСТРОВСКИЙ</cat_ru:PersonSurname>
+    <cat_ru:PersonName>Юрий</cat_ru:PersonName>
+    <RUScat_ru:IdentityCard>
+        <RUScat_ru:IdentityCardCode>RU01004</RUScat_ru:IdentityCardCode>
+        <RUScat_ru:IdentityCardSeries>75</RUScat_ru:IdentityCardSeries>
+        <RUScat_ru:IdentityCardNumber>9415230</RUScat_ru:IdentityCardNumber>
+        <RUScat_ru:IdentityCardDate>2018-10-10</RUScat_ru:IdentityCardDate>
+                    </RUScat_ru:IdentityCard>
+                </ESADout_CU:ESADout_CUDriverInformation>
+            </ESADout_CU:ESADout_CUCarrier>
+                            <ESADout_CU:ESADout_CUConsigment>
+<catESAD_cu:ContainerIndicator>false</catESAD_cu:ContainerIndicator>
+<catESAD_cu:DispatchCountryCode>FI</catESAD_cu:DispatchCountryCode>
+<catESAD_cu:DispatchCountryName>ФИНЛЯНДИЯ</catESAD_cu:DispatchCountryName>
+<catESAD_cu:DestinationCountryCode>RU</catESAD_cu:DestinationCountryCode>
+<catESAD_cu:DestinationCountryName>РОССИЯ</catESAD_cu:DestinationCountryName>
+<ESADout_CU:ESADout_CUDepartureArrivalTransport>
+    <cat_ru:TransportModeCode>31</cat_ru:TransportModeCode>
+    <cat_ru:TransportNationalityCode>RU</cat_ru:TransportNationalityCode>
+    <ESADout_CU:TransportMeansQuantity>2</ESADout_CU:TransportMeansQuantity>
+    <ESADout_CU:TransportMeans>
+        <cat_ru:VIN>WJMM1VUH40C397520</cat_ru:VIN>
+        <cat_ru:TransportIdentifier>A278PA198</cat_ru:TransportIdentifier>
+        <cat_ru:TransportMeansNationalityCode>RU</cat_ru:TransportMeansNationalityCode>
+        <catESAD_cu:FirstTrailerRegId>BH674677</catESAD_cu:FirstTrailerRegId>
+                    </ESADout_CU:TransportMeans>
+                </ESADout_CU:ESADout_CUDepartureArrivalTransport>
+<ESADout_CU:DateExpectedArrival>2020-08-18</ESADout_CU:DateExpectedArrival>
+<ESADout_CU:TimeExpectedArrival>10:00:00</ESADout_CU:TimeExpectedArrival>
+<ESADout_CU:PPBorderCustoms>
+    <cat_ru:Code>10207090</cat_ru:Code>
+    <cat_ru:OfficeName>т/п МАПП Салла</cat_ru:OfficeName>
+    <cat_ru:CustomsCountryCode>643</cat_ru:CustomsCountryCode>
+                </ESADout_CU:PPBorderCustoms>
+<ESADout_CU:TDDeliveryPlace>
+    <ESADout_CU:DeliveryCustomsOffice>
+        <cat_ru:Code>10207110</cat_ru:Code>
+        <cat_ru:OfficeName>т/п Мурманский</cat_ru:OfficeName>
+        <cat_ru:CustomsCountryCode>643</cat_ru:CustomsCountryCode>
+                    </ESADout_CU:DeliveryCustomsOffice>
+                </ESADout_CU:TDDeliveryPlace>
+            </ESADout_CU:ESADout_CUConsigment>
+                            <ESADout_CU:ESADout_CUMainContractTerms>
+<catESAD_cu:ContractCurrencyCode>EUR</catESAD_cu:ContractCurrencyCode>
+<catESAD_cu:ContractCurrencyRate>86.8258</catESAD_cu:ContractCurrencyRate>
+<catESAD_cu:TotalInvoiceAmount>64944.00</catESAD_cu:TotalInvoiceAmount>
+            </ESADout_CU:ESADout_CUMainContractTerms>
+                            <ESADout_CU:ESADout_CUGoods>
+<catESAD_cu:GoodsNumeric>1</catESAD_cu:GoodsNumeric>
+<catESAD_cu:GoodsDescription>Компоненты бетонной станции TECWILL TOWER / Бункеры инертных материалов, часть 2, поз. 1.11.2</catESAD_cu:GoodsDescription>
+<catESAD_cu:GrossWeightQuantity>10850.000</catESAD_cu:GrossWeightQuantity>
+<catESAD_cu:InvoicedCost>64944.00</catESAD_cu:InvoicedCost>
+<catESAD_cu:GoodsTNVEDCode>8474310009</catESAD_cu:GoodsTNVEDCode>
+<catESAD_cu:OriginCountryName>Неизвестно</catESAD_cu:OriginCountryName>
+<catESAD_cu:AdditionalSheetCount>1</catESAD_cu:AdditionalSheetCount>
+<ESADout_CU:CurrencyCode>EUR</ESADout_CU:CurrencyCode>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Транспортная накладная, предусмотренная Конвенцией о договоре международной дорожной перевозки грузов 1956 года</cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>P281-09</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2020-08-10</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>02015</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>fb9595e0-a47a-4f6d-ada2-13db6f656a7d</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>a85f1121-f261-4f04-af8b-b4f1516a739e</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Счет-фактура (инвойс), счет-проформа (проформа-инвойс) к договору</cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>P281-09</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2020-08-10</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>04021</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>44c87137-0263-4ed1-a3b9-98e6aaea779a</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>a85f1121-f261-4f04-af8b-b4f1516a739e</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Договор декларанта с таможенным представителем </cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>0867/00-165</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2018-05-07</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>11002</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>84591c45-8d17-4140-9582-9978a6675fdf</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>829bf5f9-bab9-4d61-97a7-194b53458761</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Документ, удостоверяющий личность </cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>4111354671</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2011-06-02</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>11001</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>c04c5f6f-f119-461b-b108-6d68f7a6ad41</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>a0c73da5-952d-414b-b472-f84586ae7a42</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Иные документы, представляемые при таможенном декларировании товаров</cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>44</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2020-02-05</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>09999</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>33e20a98-8f2f-4804-b7a3-354beda7861e</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>a0c73da5-952d-414b-b472-f84586ae7a42</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Доверенность на совершение действий от имени декларанта (лица, подающего заявление о выпуске товаров до подачи декларации на товары) или таможенного представителя</cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>6</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2020-02-13</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>11004</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>7fb1b01b-5505-4693-9eaa-6afcf25179da</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>a0c73da5-952d-414b-b472-f84586ae7a42</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:ESADout_CUPresentedDocument>
+    <cat_ru:PrDocumentName>Документ, свидетельствующий о включении лица в реестр таможенных представителей, или регистрационный номер лица в реестре таможенных представителей</cat_ru:PrDocumentName>
+    <cat_ru:PrDocumentNumber>0867/00</cat_ru:PrDocumentNumber>
+    <cat_ru:PrDocumentDate>2018-04-26</cat_ru:PrDocumentDate>
+    <catESAD_cu:PresentedDocumentModeCode>09034</catESAD_cu:PresentedDocumentModeCode>
+    <catESAD_cu:RFG44PresentedDocId>
+        <catESAD_cu:ElectronicDocumentID>0d7f6174-ac87-406b-892b-2c8ac5684ba1</catESAD_cu:ElectronicDocumentID>
+        <catESAD_cu:ElectronicArchID>a0c73da5-952d-414b-b472-f84586ae7a42</catESAD_cu:ElectronicArchID>
+                    </catESAD_cu:RFG44PresentedDocId>
+                </ESADout_CU:ESADout_CUPresentedDocument>
+<ESADout_CU:SupplementaryGoodsQuantity>
+    <cat_ru:GoodsQuantity>1.000000</cat_ru:GoodsQuantity>
+    <cat_ru:MeasureUnitQualifierName>ШТ</cat_ru:MeasureUnitQualifierName>
+    <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+                </ESADout_CU:SupplementaryGoodsQuantity>
+<ESADout_CU:ESADGoodsPackaging>
+    <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+    <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+    <catESAD_cu:PackagePalleteInformation>
+        <catESAD_cu:InfoKindCode>0</catESAD_cu:InfoKindCode>
+        <catESAD_cu:PalleteCode>PK</catESAD_cu:PalleteCode>
+        <catESAD_cu:PalleteQuantity>1</catESAD_cu:PalleteQuantity>
+                    </catESAD_cu:PackagePalleteInformation>
+                </ESADout_CU:ESADGoodsPackaging>
+            </ESADout_CU:ESADout_CUGoods>
+                            <ESADout_CU:TDGuarantee>
+<catESAD_cu:MeasureCode>03</catESAD_cu:MeasureCode>
+<catESAD_cu:DocNumber>10000000/110820/0311359</catESAD_cu:DocNumber>
+<catESAD_cu:DocDate>2020-08-11</catESAD_cu:DocDate>
+            </ESADout_CU:TDGuarantee>
+        </ESADout_CU:ESADout_CUGoodsShipment>
+                        <ESADout_CU:FilledPerson>
+                            <RUDECLcat:SigningDetails>
+<cat_ru:PersonSurname>СОКОЛОВ</cat_ru:PersonSurname>
+<cat_ru:PersonName>АЛЕКСЕЙ</cat_ru:PersonName>
+<cat_ru:PersonMiddleName>ВАСИЛЬЕВИЧ</cat_ru:PersonMiddleName>
+<RUScat_ru:SigningDate>2020-08-11T12:16:35</RUScat_ru:SigningDate>
+            </RUDECLcat:SigningDetails>
+                            <RUDECLcat:SignatoryPersonIdentityDetails>
+<RUScat_ru:IdentityCardCode>21</RUScat_ru:IdentityCardCode>
+<RUScat_ru:IdentityCardSeries>4111</RUScat_ru:IdentityCardSeries>
+<RUScat_ru:IdentityCardNumber>354671</RUScat_ru:IdentityCardNumber>
+<RUScat_ru:IdentityCardDate>2011-06-02</RUScat_ru:IdentityCardDate>
+<RUScat_ru:OrganizationName>ТП №135 ОТДЕЛА УФМС РОССИИ ПО САНКТ-ПЕТЕРБУРГУ И ЛЕНИНГРАДСКОЙ ОБЛ. В ТОСНЕНСКОМ Р-НЕ</RUScat_ru:OrganizationName>
+            </RUDECLcat:SignatoryPersonIdentityDetails>
+        </ESADout_CU:FilledPerson>
+    </ESADout_CU:ESADout_CU>
+</fts:Object>
+                            </fts:Signature>
+                        </edcnt:DocBody>
+                    </edcnt:ContainerDoc>
+    <edcnt:ContainerDoc>
+        <edcnt:DocBody>
+            <fts:Signature xmlns:fts="http://www.w3.org/2000/09/xmldsig#">
+                <fts:SignedInfo>
+                    <fts:CanonicalizationMethod Algorithm="urn:xml-dsig:transformation:v1.1"/>
+                    <fts:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                    <fts:Reference URI="#KeyInfo">
+                        <fts:Transforms>
+                            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+                        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                        <fts:DigestValue>gSrN0z5sI7o5CNgrM/XIo6Zaa9Z0awE1IF033rMXpG8=</fts:DigestValue>
+    </fts:Reference>
+                    <fts:Reference URI="#Object">
+                        <fts:Transforms>
+                            <fts:Transform Algorithm="urn:xml-dsig:transformation:v1.1"/>
+        </fts:Transforms>
+                        <fts:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                        <fts:DigestValue>v0zzhWfNCIV7/VfNb3EpH50qXOx0388o3/ZVOgcATnA=</fts:DigestValue>
+    </fts:Reference>
+</fts:SignedInfo>
+                <fts:SignatureValue>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</fts:SignatureValue>
+                <fts:KeyInfo Id="KeyInfo">
+                    <fts:X509Data>
+                        <fts:X509Certificate>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</fts:X509Certificate>
+    </fts:X509Data>
+</fts:KeyInfo>
+                <fts:Object Id="Object">
+                    <ivt:Inventory xmlns:ivt="urn:customs.ru:Information:CustomsDocuments:Inventory:5.15.0" xmlns:RUScat_ru="urn:customs.ru:RUSCommonAggregateTypes:5.15.0" DocumentModeID="1006003E">
+                        <cat_ru:DocumentID>0D9257B2-A8C5-7458-5C05-E43912141AA2</cat_ru:DocumentID>
+                        <ivt:NumberOfInvent>1</ivt:NumberOfInvent>
+                        <ivt:GTDPerson>
+                            <cat_ru:OrganizationName>АТП НЕВСКОЕ ООО</cat_ru:OrganizationName>
+                            <cat_ru:RFOrganizationFeatures>
+<cat_ru:OGRN>1021101121194</cat_ru:OGRN>
+<cat_ru:INN>7813380915</cat_ru:INN>
+<cat_ru:KPP>112101001</cat_ru:KPP>
+            </cat_ru:RFOrganizationFeatures>
+        </ivt:GTDPerson>
+                        <ivt:InventoryInstance>
+                            <ivt:InstanceNumber>1</ivt:InstanceNumber>
+                            <ivt:InventoryInstanceDate>2020-08-11</ivt:InventoryInstanceDate>
+                            <ivt:InventoryInstancePerson>
+<cat_ru:PersonSurname>СОКОЛОВ</cat_ru:PersonSurname>
+<cat_ru:PersonName>АЛЕКСЕЙ</cat_ru:PersonName>
+<cat_ru:PersonMiddleName>ВАСИЛЬЕВИЧ</cat_ru:PersonMiddleName>
+<ivt:IdentityCard>
+    <RUScat_ru:IdentityCardCode>21</RUScat_ru:IdentityCardCode>
+    <RUScat_ru:IdentityCardName>ПАСРФ</RUScat_ru:IdentityCardName>
+    <RUScat_ru:IdentityCardSeries>4111</RUScat_ru:IdentityCardSeries>
+    <RUScat_ru:IdentityCardNumber>354671</RUScat_ru:IdentityCardNumber>
+    <RUScat_ru:IdentityCardDate>2011-06-02</RUScat_ru:IdentityCardDate>
+    <RUScat_ru:OrganizationName>ТП №135 ОТДЕЛА УФМС РОССИИ ПО САНКТ-ПЕТЕРБУРГУ И ЛЕНИНГРАДСКОЙ ОБЛ. В ТОСНЕНСКОМ Р-НЕ</RUScat_ru:OrganizationName>
+                </ivt:IdentityCard>
+<ivt:AuthoritesDocument/>
+            </ivt:InventoryInstancePerson>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>02015</ivt:InvDocCode>
+<ivt:InvDocName>CMR</ivt:InvDocName>
+<ivt:InvDocNumber>P281-09</ivt:InvDocNumber>
+<ivt:InvDocDate>2020-08-10</ivt:InvDocDate>
+<ivt:InvDocLists>1</ivt:InvDocLists>
+<ivt:InvDocCopies>1</ivt:InvDocCopies>
+<ivt:ArchID>a85f1121-f261-4f04-af8b-b4f1516a739e</ivt:ArchID>
+<ivt:ArchDocID>fb9595e0-a47a-4f6d-ada2-13db6f656a7d</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>04021</ivt:InvDocCode>
+<ivt:InvDocName>Инвойс</ivt:InvDocName>
+<ivt:InvDocNumber>P281-09</ivt:InvDocNumber>
+<ivt:InvDocDate>2020-08-10</ivt:InvDocDate>
+<ivt:InvDocLists>1</ivt:InvDocLists>
+<ivt:InvDocCopies>1</ivt:InvDocCopies>
+<ivt:ArchID>a85f1121-f261-4f04-af8b-b4f1516a739e</ivt:ArchID>
+<ivt:ArchDocID>44c87137-0263-4ed1-a3b9-98e6aaea779a</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>11002</ivt:InvDocCode>
+<ivt:InvDocName>Договор декларанта с таможенным представителем </ivt:InvDocName>
+<ivt:InvDocNumber>0867/00-165</ivt:InvDocNumber>
+<ivt:InvDocDate>2018-05-07</ivt:InvDocDate>
+<ivt:InvDocLists>1</ivt:InvDocLists>
+<ivt:InvDocCopies>1</ivt:InvDocCopies>
+<ivt:ArchID>829bf5f9-bab9-4d61-97a7-194b53458761</ivt:ArchID>
+<ivt:ArchDocID>84591c45-8d17-4140-9582-9978a6675fdf</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>11001</ivt:InvDocCode>
+<ivt:InvDocName>Документ, удостоверяющий личность </ivt:InvDocName>
+<ivt:InvDocNumber>4111354671</ivt:InvDocNumber>
+<ivt:InvDocDate>2011-06-02</ivt:InvDocDate>
+<ivt:ArchID>a0c73da5-952d-414b-b472-f84586ae7a42</ivt:ArchID>
+<ivt:ArchDocID>c04c5f6f-f119-461b-b108-6d68f7a6ad41</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>09999</ivt:InvDocCode>
+<ivt:InvDocName>Иные документы, представляемые при таможенном декларировании товаров</ivt:InvDocName>
+<ivt:InvDocNumber>44</ivt:InvDocNumber>
+<ivt:InvDocDate>2020-02-05</ivt:InvDocDate>
+<ivt:ArchID>a0c73da5-952d-414b-b472-f84586ae7a42</ivt:ArchID>
+<ivt:ArchDocID>33e20a98-8f2f-4804-b7a3-354beda7861e</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>11004</ivt:InvDocCode>
+<ivt:InvDocName>Доверенность на совершение действий от имени декларанта или таможенного представителя</ivt:InvDocName>
+<ivt:InvDocNumber>6</ivt:InvDocNumber>
+<ivt:InvDocDate>2020-02-13</ivt:InvDocDate>
+<ivt:ArchID>a0c73da5-952d-414b-b472-f84586ae7a42</ivt:ArchID>
+<ivt:ArchDocID>7fb1b01b-5505-4693-9eaa-6afcf25179da</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+                            <ivt:InventDocument>
+<ivt:InvDocCode>09034</ivt:InvDocCode>
+<ivt:InvDocName>Документ, свидетельствующий о включении лица в реестр таможенных представителей, или регистрационный номер лица в реестре таможенных представителей</ivt:InvDocName>
+<ivt:InvDocNumber>0867/00</ivt:InvDocNumber>
+<ivt:InvDocDate>2018-04-26</ivt:InvDocDate>
+<ivt:ArchID>a0c73da5-952d-414b-b472-f84586ae7a42</ivt:ArchID>
+<ivt:ArchDocID>0d7f6174-ac87-406b-892b-2c8ac5684ba1</ivt:ArchDocID>
+<ivt:DocumentFormSign>0</ivt:DocumentFormSign>
+            </ivt:InventDocument>
+        </ivt:InventoryInstance>
+    </ivt:Inventory>
+</fts:Object>
+                            </fts:Signature>
+                        </edcnt:DocBody>
+                    </edcnt:ContainerDoc>
+                </edcnt:ED_Container>
+<ns97:RNTS_FLCViolationProtocol DocumentModeID="1007050E">
+    <ns3:DocumentModeID>1007050E</ns3:DocumentModeID>
+    <ns3:DocumentID>b96a6fdf-001b-40ef-87fb-8352743fe4af</ns3:DocumentID>
+    <ns3:RefDocumentID>7DB75CB1-7DF1-9BE1-DEEA-5645A90D5DFC</ns3:RefDocumentID>
+    <ns3:ProcessID>b96eabce-4dc4-487c-aa1f-877b8b1fde13</ns3:ProcessID>
+    <ns3:DocumentDateTime>2020-08-12T11:19:40</ns3:DocumentDateTime>
+    <ns3:DocumentVersionNumber>1</ns3:DocumentVersionNumber>
+    <ns3:IsTest>false</ns3:IsTest>
+    <ns97:AlgorithmType>1</ns97:AlgorithmType>
+    <ns97:DateTime>2020-08-12T11:19:40</ns97:DateTime>
+    <ns97:FLCViolationInfo>
+        <ns3:Group>180</ns3:Group>
+        <ns3:Code>T010</ns3:Code>
+        <ns3:Description>Контроль наличия в АС «ПП» подтверждения о прибытии по таможенному номеру накладной</ns3:Description>
+        <ns3:CheckerCode>AR-05.01.002</ns3:CheckerCode>
+        <ns3:AdditionalInfo>Сведения о регистрации прибытия по УИН ТД в АС «ПП» и документ с кодом 10045 для запроса в АС «ПП» отсутствуют</ns3:AdditionalInfo>
+    </ns97:FLCViolationInfo>
+    <ns97:FLCViolationInfo>
+        <ns3:Group>180</ns3:Group>
+        <ns3:Code>T014</ns3:Code>
+        <ns3:Description>Проверка сведений о коде товаров (на уровне 6 знаков) в подтверждении о прибытии (из АС «ПП»), со сведениями в графе 33 ЭТД</ns3:Description>
+        <ns3:CheckerCode>AR-05.01.006</ns3:CheckerCode>
+        <ns3:AdditionalInfo>Сведения о регистрации прибытия по УИН ТД отсутствуют в АС «ПП», в графе 44 ЭТД отсутствует документ с кодом 10045 для запроса в АС «ПП»</ns3:AdditionalInfo>
+    </ns97:FLCViolationInfo>
+    <ns97:FLCViolationInfo>
+        <ns3:Group>180</ns3:Group>
+        <ns3:Code>T015</ns3:Code>
+        <ns3:Description>Проверка сведений о весе (брутто) товаров в подтверждении о прибытии (из АС «ПП»), со сведениями в графе 35 ЭТД</ns3:Description>
+        <ns3:CheckerCode>AR-05.01.007</ns3:CheckerCode>
+        <ns3:AdditionalInfo>Сведения о регистрации прибытия по УИН ТД отсутствуют в АС «ПП», в графе 44 ЭТД отсутствует документ с кодом 10045 для запроса в АС «ПП»</ns3:AdditionalInfo>
+    </ns97:FLCViolationInfo>
+</ns97:RNTS_FLCViolationProtocol>
+<ns83:RNTS_ExternalDocsMsgTypes DocumentModeID="1007004E">
+    <ns3:DocumentModeID>1007004E</ns3:DocumentModeID>
+    <ns3:DocumentID>E1C0E71E-0A15-2A8A-6A49-67B3DDBB0498</ns3:DocumentID>
+    <ns83:Document>
+        <ns83:DocumentID>21D8956B-79F9-5A53-E9AE-00D8C4084CFB</ns83:DocumentID>
+        <ns83:MessageType>RNTS.101.110</ns83:MessageType>
+    </ns83:Document>
+    <ns83:Document>
+        <ns83:DocumentID>7DB75CB1-7DF1-9BE1-DEEA-5645A90D5DFC</ns83:DocumentID>
+        <ns83:MessageType>RNTS.101.110</ns83:MessageType>
+    </ns83:Document>
+    <ns83:Document>
+        <ns83:DocumentID>0D9257B2-A8C5-7458-5C05-E43912141AA2</ns83:DocumentID>
+        <ns83:MessageType>RNTS.101.110</ns83:MessageType>
+    </ns83:Document>
+    <ns83:Document>
+        <ns83:DocumentID>b96a6fdf-001b-40ef-87fb-8352743fe4af</ns83:DocumentID>
+        <ns83:MessageType>RNTS.101.110</ns83:MessageType>
+    </ns83:Document>
+</ns83:RNTS_ExternalDocsMsgTypes>
+                            </ns98:Docs>
+                        </ns98:RNTS_ExternalEDContainer>
+                    </ns101:Docs>
+                </ns101:RNTS_EDContainer>
+            </ns159:Object>
+        </Signature:Signature>
+    </ns5:Body>
+</ns5:Envelope>
