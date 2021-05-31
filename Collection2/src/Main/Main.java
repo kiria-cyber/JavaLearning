@@ -1,9 +1,9 @@
-package main;
+package Main;
 
 public class Main {
     public static void main(String[] args) {
+        ArrayList employees = new ArrayList();
 
-        MyArrayList employees = new MyArrayList();
         employees.add("Никита");
         employees.add("Игорь");
         employees.add("Ваня");
@@ -11,11 +11,9 @@ public class Main {
         employees.add("Максим");
         employees.add("Ирина");
         employees.add("Алексей");
-        employees.remove("Ваня");
-        employees.remove("Алексей");
-        employees.remove("Семен");
-        System.out.println(employees.showArray());
+        employees.remove(2);
+        employees.remove(4);
+        employees.showArray();
 
     }
-
 }

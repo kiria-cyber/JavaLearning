@@ -11,7 +11,6 @@ public class MyArrayList {
             String[] newArray = new String[array.length * 2];
             for (int i = 0; i < array.length; i++) {
                 newArray[i] = array[i];
-
             }
             array = newArray;
         }
@@ -34,18 +33,25 @@ public class MyArrayList {
                 index = i;
                 break;
             }
-
         }
         if (index != -1) {
             remove(index);
-
         }
-
     }
 
     public int getSize() {
         return size;
     }
+
+    public String showArray() {
+        String s = "";
+        for (int i = 0; i < size - 1; i++) {
+            s = s +", "+ array[i];
+        }
+        return s;
+
+    }
+
 
     public String get(int index) {
         if (index < size || index >= 0) {
