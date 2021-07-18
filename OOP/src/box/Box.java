@@ -15,26 +15,20 @@ public class Box {
         width = size;
         height = size;
         length = size;
-
     }
 
     public Box() {
         width = 0;
-        height = 0;
         length = 0;
+        height = 0;
     }
 
     public Box(Box box) {
         this.width = box.width;
-        this.height = box.height;
         this.length = box.length;
+        this.height = box.height;
     }
 
-    public Box(Box box1, Box box2) {
-        this.width = box1.width + box2.width;
-        this.length = box1.length + box2.length;
-        this.height = box1.height + box2.height;
-    }
 
     public void setDimens(double width, double height, double length) {
         this.width = width;
@@ -42,13 +36,8 @@ public class Box {
         this.length = length;
     }
 
-
     public Box increase(int i) {
         return new Box(width * i, height * i, length * i);
-    }
-
-    public Box sumBox(Box box) {
-        return new Box(this.width + box.width, this.height + box.height, this.length + box.length);
     }
 
     public double volume() {
@@ -56,20 +45,21 @@ public class Box {
     }
 
     public void showVolume() {
+
         System.out.println(volume());
     }
 
-    public void compare(Box box) {
+    public int compare(Box box) {
         double thisVolume = volume();
-        double boxvolume = box.volume();
-        String result;
-        if (thisVolume > boxvolume) {
-            result = "Наша коробка больше";
-        } else if (thisVolume < boxvolume) {
-            result = "Наша коробка меньше";
+        double boxVolume = box.volume();
+        int result;
+        if (thisVolume > boxVolume) {
+            result = 1;
+        } else if (thisVolume < boxVolume) {
+            result = -1;
         } else
-            result = "Коробки равны";
-        System.out.println(result);
+            result = 0;
+        return result;
     }
 
     public double getWidth() {
