@@ -63,7 +63,9 @@ public class Box {
     }
 
     public void showInfo() {
-        System.out.println("ширина: " + width + ", высота: " + height + ", длинна: " + length);
+        System.out.println("Ширина: " + width);
+        System.out.println("Высота: " + height);
+        System.out.println("Длинна: " + length);
     }
 
     public double getWidth() {
