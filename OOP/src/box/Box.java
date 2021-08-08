@@ -1,5 +1,7 @@
 package box;
 
+import java.time.format.SignStyle;
+
 public class Box {
     private double width;
     private double height;
@@ -80,4 +82,9 @@ public class Box {
         return length;
     }
 
+    @Override
+    public String toString() {
+        String result = String.format("Ширина: %s\nДлинна: %s\nВысота: %s", width, length, height);
+        return result;
+    }
 }
